@@ -30,8 +30,13 @@
       "description": "## Issue an Okta-Managed Certificate\n\nNavigate back to the Okta tab and click `Next`. Okta will take a moment to verify the DNS 01 challenge:\n\n- If verification fails, go back and check that you entered both the TXT and CNAME records correctly\n\n- If verification is successful, Okta will issue a TLS certificate for your custom domain. Click `Finish`."
     },
     {
+      "title": "Verify Custom Domain",
+      "description": "Launch an incognito window and visit `https://<SUBDOMAIN>.<DOMAIN>`. You should see the Okta Sign In page.\n\n📝 **Note:** The custom domain is valid for the User Home console and the Self-Service screens. The custom domain is not used in the admin console.\n"
+    },
+    {
       "title": "Lab Checkpoint",
       "description": "## ✅ Checkpoint\n\nAt this point, you have done the configuration that will allow you to access your Okta org with your custom domain. \n"
     }
-  ]
+  ],
+  "isPrimary": true
 }

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Lab 2-2 Customize the Okta-hosted Sign-In Widget",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 2-2: Customize the Custom Okta-hosted Sign-In Widget\n\n🎯 **Objective:**  Customize the Okta-hosted Sign-In Widget.     \n\n🎬 **Scenario**    You will customize the Okta sign-in page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+    },
+    {
+      "title": "Access the Sign-in Page Code Editor",
+      "description": "## Access the Sign-in Page Code Editor\n\n1.  If you aren't already, sign in to your Okta org as your Super Admin acount `oktatraining`.\n\n2.  From the Admin dashboard, click `Customizations` > `Sign-in page code editor`.\n\nYou will see the default Sign-in page code:\n\n```html\n<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"robots\" content=\"noindex,nofollow\" />\n    <!-- Styles generated from theme -->\n    <link href=\"{{themedStylesUrl}}\" rel=\"stylesheet\" type=\"text/css\">\n    <!-- Favicon from theme -->\n    <link rel=\"shortcut icon\" href=\"{{faviconUrl}}\" type=\"image/x-icon\"/>\n\n    <title>{{pageTitle}}</title>\n    {{{SignInWidgetResources}}}\n</head>\n<body>\n    <div class=\"login-bg-image tb--background\" style=\"background-image: {{bgImageUrl}}\"></div>\n    <div id=\"okta-login-container\"></div>\n\n    <!--\n        \"OktaUtil\" defines a global OktaUtil object\n        that contains methods used to complete the Okta login flow.\n     -->\n    {{{OktaUtil}}}\n\n    <script type=\"text/javascript\">\n        // \"config\" object contains default widget configuration\n        // with any custom overrides defined in your admin settings.\n        var config = OktaUtil.getSignInWidgetConfig();\n\n        // Render the Okta Sign-In Widget\n        var oktaSignIn = new OktaSignIn(config);\n        oktaSignIn.renderEl({ el: '#okta-login-container' },\n            OktaUtil.completeLogin,\n            function(error) {\n                // Logs errors that occur when configuring the widget.\n                // Remove or replace this with your own custom error handler.\n                console.log(error.message, error);\n            }\n        );\n    </script>\n</body>\n</html>\n```"
+    }
+  ]
+}
