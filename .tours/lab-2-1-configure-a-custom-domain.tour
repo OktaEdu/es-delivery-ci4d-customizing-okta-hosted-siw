@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "Lab 2-1 Configure A Custom Domain",
+  "title": "#1 - Lab 2.1 Configure A Custom Domain",
   "steps": [
     {
       "title": "Lab Overview",
@@ -15,7 +15,7 @@
     },
     {
       "title": "Log In to the DNS Configuration Tool",
-      "description": "## Log In to the DNS Configuration Tool\nIn a new tab, navigate to our DNS configuration tool at [https://oktaice.store/ciam/](https://oktaice.store/ciam/) and log in with the following information (replacing ### with your assigned subdomain number)\n\n| Field Name | Value |\n|-----------|--------:|\n| Subdomain | `signin###` |\n| Domain | `coffee-ice.com` |\n| Username | `oktatraining` |\n| Password | `Tra!nme4321` |\n\n\nWhen you log in, verify that you have logged in to modify the DNS entries for the correct subdomain and domain. \n\n <img src=\"img/2-1-ciam-tool.png\" width=\" 600px\">\n\nThere should not be any entries. If there are, delete them.\n"
+      "description": "## Log In to the DNS Configuration Tool\nIn a new tab, navigate to our DNS configuration tool at [https://oktaice.store/ciam/](https://oktaice.store/ciam/) and log in with the following information (replacing ### with your assigned subdomain number)\n\n| Field Name | Value |\n|-----------|--------:|\n| Subdomain | `signin###` |\n| Domain | `coffee-ice.com` |\n| Username | `oktatraining` |\n| Password | `Tra!nme4321` |\n\n\nWhen you log in, verify that you have logged in to modify the DNS entries for the correct subdomain and domain. \n\n <img src=\"img/2-1-ciam-tool.png\" width=\" 600px\">\n\nThere should not be any entries. If there are, delete them."
     },
     {
       "title": "Add the TXT Entry",
