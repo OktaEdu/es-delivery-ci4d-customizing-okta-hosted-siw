@@ -149,7 +149,7 @@
           "character": 55
         }
       },
-      "description": "## SIW JavaScript: `config` Variable\n\nThis variable gets the configuration of the Sign-In Widget, This configuration, at minimum, defines the `issuer`, `clientId`, and `redirectUri`"
+      "description": "## SIW JavaScript: `config` Variable\n\nThe `config` variable gets the configuration of the Sign-In Widget, This configuration, at minimum, defines the `issuer`, `clientId`, and `redirectUri`"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -163,7 +163,7 @@
           "character": 49
         }
       },
-      "description": "## SIW JavaScript: Creating an OktaSignIn Object"
+      "description": "## SIW JavaScript: Creating an OktaSignIn Object\n\nThis line instantiates new `OktaSignIn` object with the configurations we have stored in `config`. This will be used to render the SIW in the following lines."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -177,7 +177,7 @@
           "character": 11
         }
       },
-      "description": "## SIW JavaScript: Rendering the Okta SIW"
+      "description": "## SIW JavaScript: Rendering the Okta SIW\nThe `OktaSignIn` object is then used to call the `renderEl()` funtion to render the SIW. Let's take a look at the method signature to break down what's being passed to this method:\n\n```\n renderEl(renderOptions: RenderOptions, successFn?: RenderSuccessCallback, errorFn?: RenderErrorCallback): Promise<RenderResult> \n```\n\n### Render Options\nThis parameter takes render options for the SIW in the form of JSON data. It must include the `el` or `$el` property.\nIn this case, we're passing a CSS class `#okta-login-container`, which will render the SIW in a `div` of this class.\n\n### Success Callback\nThis parameter expects a function, which gets called upon successfully configuring and rendering the widget.\n\n### Error Callback\nThis paramater expects a function, which gets called if there is an error when configuring and rendering the widget. Currently, we are simply logging the error to console."
     },
     {
       "title": "Access the Theme Builder",
@@ -197,7 +197,7 @@
     },
     {
       "title": "Customize the Background Image",
-      "description": "## Customize the Background Image\n\nClick `Save Changes`"
+      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. We're going to use the `ice-cream-bg.png` file in the `img/` folder of this project. \n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
     },
     {
       "title": "Configure the Okta-hosted Sign-in Page",
