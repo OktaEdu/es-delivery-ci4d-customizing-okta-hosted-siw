@@ -201,7 +201,7 @@
     },
     {
       "title": "Configure the Okta-hosted Sign-in Page",
-      "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labelled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-in Page`\n2. Click the style labelled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
+      "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-in Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
     }
   ]
 }
