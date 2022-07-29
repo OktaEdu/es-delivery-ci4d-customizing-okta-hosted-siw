@@ -163,7 +163,7 @@
           "character": 49
         }
       },
-      "description": "## SIW JavaScript: Creating an OktaSignIn Object\n\nThis line instantiates new `OktaSignIn` object with the configurations we have stored in `config`. This will be used to render the SIW in the following lines."
+      "description": "## SIW JavaScript: Creating an `OktaSignIn` Object\n\nThis line instantiates new `OktaSignIn` object with the configurations we have stored in `config`. This will be used to render the SIW in the following lines."
     },
     {
       "file": "default-okta-sign-in-page.html",
