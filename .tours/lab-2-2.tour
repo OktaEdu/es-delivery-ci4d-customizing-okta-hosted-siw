@@ -181,27 +181,35 @@
     },
     {
       "title": "Access the Theme Builder",
-      "description": "## Access the Theme Builder\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Theme Builder.\n\nNavigate to `Customize` > `Branding`\n\nYou'll see you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
+      "description": "## Access the Theme Builder\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Theme Builder.\n\nNavigate to `Customize` > `Branding`\n\nUnder the `Theme` section, you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
     },
     {
       "title": "Customize the Primary and Secondary Colors",
-      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#cc99cc`\n\nChange the Secondary color to `#B4EDD2`"
+      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#CC99CC`\n\nChange the Secondary color to `#B4EDD2`"
     },
     {
       "title": "Customize the Logo",
-      "description": "## Customize the Logo\n\nNext, we're going to upload a custom logo. We're going to use the `ice-logo.png` file in the `img/` folder of this project. \n\n![Our Custom Logo](./img/ice-logo.png)"
+      "description": "## Customize the Logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Click the pencil icon next to the `Logo` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-logo.png`\n\n![Our Custom Logo](./img/ice-logo.png)"
     },
     {
       "title": "Customize the Favicon",
-      "description": "## Customize the Favicon"
+      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-favicon.png`\n\n![Our Custom Logo](./img/ice-favicon.png)"
     },
     {
       "title": "Customize the Background Image",
-      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. We're going to use the `ice-cream-bg.png` file in the `img/` folder of this project. \n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
+      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-cream-bg.png`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
     },
     {
       "title": "Configure the Okta-hosted Sign-in Page",
-      "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-in Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
+      "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-In Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
+    },
+    {
+      "title": "Preview the Sign-In Page",
+      "description": "## Preview the Sign-In Page\n\nWe're going to navigate back to the Sign-in page code editor to preview the Sign In Page and add some additional customizations.\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nYou should now see a customized Sign-in Page, which we've achieved without changing any code."
+    },
+    {
+      "title": "More Customization with the Sign-In Page Code Editor",
+      "description": "## More Customization with the Sign-In Page Code Editor\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Theme Builder. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Theme Builder can offer. For this, we use the integrated Sign-In Page code editor."
     }
   ]
 }
