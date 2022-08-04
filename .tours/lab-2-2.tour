@@ -1,0 +1,215 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#2 - Lab 2.2 Customize the Okta-hosted Sign-In Widget",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 2-2: Customize the Custom Okta-hosted Sign-In Widget\n\n🎯 **Objective:**  Customize the Okta-hosted Sign-In Widget.     \n\n🎬 **Scenario**    You will customize the Okta sign-in page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+    },
+    {
+      "title": "Access the Sign-in Page Code Editor",
+      "description": "## Access the Sign-in Page Code Editor\n\n1.  If you aren't already, sign in to your Okta org as your Super Admin acount `oktatraining`\n\n2.  From the Admin dashboard, click `Customizations` > `Sign-in page code editor`\n\nYou will see the default Sign-in page code, which we'll walk through next.\n"
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 43,
+          "character": 1
+        }
+      },
+      "description": "## The Default Sign-in Page Code\n\nThe code from the default Okta-hosted sign-in Page has been copied here so we can explore it more in depth. You can customize the Okta-hosted sign-in page, not only by modifying the code in the Sign-in Page Code Editor, but by configuring settings in Okta's Theme Builder. Your Okta org must have Theme Builder enabled to use these macros in the Sign In Page code editor."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 17
+        },
+        "end": {
+          "line": 8,
+          "character": 36
+        }
+      },
+      "description": "## Examine the Sign-in Page Macros\n\nThroughout the default Sign-in Page code, you will see entries surrounded by curly braces `{{}}` such as the one highlighted here. These are called **macros**. Macros generate code that can be applied in the Sign-In Page code editor. The data these macros depend upon are configurable in Okta's Theme Builder.  ",
+      "title": "Sign-in Page Code Macros"
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 16
+        },
+        "end": {
+          "line": 8,
+          "character": 37
+        }
+      },
+      "description": "## Sign-in Page Macro: `themedStylesUrl`\n\nThe macro `{{themedStylesUrl}}` generates a CSS file that defines the primary and secondary colors for this page."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 10,
+          "character": 37
+        },
+        "end": {
+          "line": 10,
+          "character": 51
+        }
+      },
+      "description": "## Sign-in Page Macro: `faviconUrl`\n\nThe `{{faviconUrl}}` macro inserts the URL for the favicon. The favicon can be changed in the Okta Theme Builder."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 12,
+          "character": 12
+        },
+        "end": {
+          "line": 12,
+          "character": 25
+        }
+      },
+      "description": "## Sign-in Page Macro: `pageTitle`\n\nThe `{{pageTitle}}` macro inserts the page title set in the Okta Theme Builder."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 5
+        },
+        "end": {
+          "line": 13,
+          "character": 32
+        }
+      },
+      "description": "## Sign-in Page Macro: `SignInWidgetResource`\n\nThe `SignInWidgetResource` inserts the JavaScript and CSS files required to use the Okta Sign-In Widget."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 16,
+          "character": 73
+        },
+        "end": {
+          "line": 16,
+          "character": 87
+        }
+      },
+      "description": "## Sign-in Page Macro: `bgImageUrl`\n\nThe `{{bgImageUrl}}` macro inserts the URL to the background image configured in your Okta organization."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 23,
+          "character": 5
+        },
+        "end": {
+          "line": 23,
+          "character": 19
+        }
+      },
+      "description": "## Sign-in Page Macro: `OktaUtil`\n\nDefines a global `OktaUtil` JavaScript object that contains methods used to complete the Okta sign-in flow. When an application uses the Okta-hosted sign-in page to sign a user in, information (called request context) is available about the target application and the request."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 25,
+          "character": 1
+        },
+        "end": {
+          "line": 40,
+          "character": 14
+        }
+      },
+      "description": "## Sign-In Widget JavaScript\nNext we'll walk through this bit of JavaScript that is responsible for rendering the Okta Sign-In Widget (SIW) on the sign in page. The SIW itself is a JavaScript library."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 28,
+          "character": 9
+        },
+        "end": {
+          "line": 28,
+          "character": 55
+        }
+      },
+      "description": "## SIW JavaScript: `config` Variable\n\nThe `config` variable gets the configuration of the Sign-In Widget, This configuration, at minimum, defines the `issuer`, `clientId`, and `redirectUri`"
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 31,
+          "character": 9
+        },
+        "end": {
+          "line": 31,
+          "character": 49
+        }
+      },
+      "description": "## SIW JavaScript: Creating an `OktaSignIn` Object\n\nThis line instantiates new `OktaSignIn` object with the configurations we have stored in `config`. This will be used to render the SIW in the following lines."
+    },
+    {
+      "file": "default-okta-sign-in-page.html",
+      "selection": {
+        "start": {
+          "line": 32,
+          "character": 9
+        },
+        "end": {
+          "line": 39,
+          "character": 11
+        }
+      },
+      "description": "## SIW JavaScript: Rendering the Okta SIW\nThe `OktaSignIn` object is then used to call the `renderEl()` funtion to render the SIW. Let's take a look at the method signature to break down what's being passed to this method:\n\n```\n renderEl(renderOptions: RenderOptions, successFn?: RenderSuccessCallback, errorFn?: RenderErrorCallback): Promise<RenderResult> \n```\n\n### Render Options\nThis parameter takes render options for the SIW in the form of JSON data. It must include the `el` or `$el` property.\nIn this case, we're passing a CSS class `#okta-login-container`, which will render the SIW in a `div` of this class.\n\n### Success Callback\nThis parameter expects a function, which gets called upon successfully configuring and rendering the widget.\n\n### Error Callback\nThis paramater expects a function, which gets called if there is an error when configuring and rendering the widget. Currently, we are simply logging the error to console."
+    },
+    {
+      "title": "Access the Theme Builder",
+      "description": "## Access the Theme Builder\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Theme Builder.\n\nNavigate to `Customize` > `Branding`\n\nUnder the `Theme` section, you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
+    },
+    {
+      "title": "Customize the Primary and Secondary Colors",
+      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#CC99CC`\n\nChange the Secondary color to `#B4EDD2`"
+    },
+    {
+      "title": "Customize the Logo",
+      "description": "## Customize the Logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Click the pencil icon next to the `Logo` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-logo.png`\n\n![Our Custom Logo](./img/ice-logo.png)"
+    },
+    {
+      "title": "Customize the Favicon",
+      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-favicon.png`\n\n![Our Custom Logo](./img/ice-favicon.png)"
+    },
+    {
+      "title": "Customize the Background Image",
+      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-cream-bg.png`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
+    },
+    {
+      "title": "Configure the Okta-hosted Sign-in Page",
+      "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-In Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
+    },
+    {
+      "title": "Preview the Sign-In Page",
+      "description": "## Preview the Sign-In Page\n\nWe're going to navigate back to the Sign-in page code editor to preview the Sign In Page and add some additional customizations.\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nYou should now see a customized Sign-in Page, which we've achieved without changing any code."
+    },
+    {
+      "title": "More Customization with the Sign-In Page Code Editor",
+      "description": "## More Customization with the Sign-In Page Code Editor\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Theme Builder. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Theme Builder can offer. For this, we use the integrated Sign-In Page code editor."
+    }
+  ]
+}
