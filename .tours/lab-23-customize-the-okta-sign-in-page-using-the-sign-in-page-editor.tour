@@ -1,0 +1,13 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#3 - Lab 2.3 Customize the Okta Sign-In Page Using the Sign-in Page Code Editor",
+  "steps": [
+    {
+      "description": "## Lab 2.3: Customize the Okta Sign-In Page Using the Sign-In Page Code Editor\n\n🎯 **Objective:**  Create an more customized Sign-In Page experience by implementing code changes.\n\n🎬 **Scenario**    You will customize the Okta sign-in page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": ""
+    }
+  ]
+}
