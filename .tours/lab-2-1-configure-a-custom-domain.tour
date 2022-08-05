@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "# Lab 2-1 Configure a Custom Domain\n\n🎯 **Objective:**   Configure a custom domain in Okta and configure your DNS to support the custom URL. \n\n🎬 **Scenario**    Continuing with the white label experience, Okta Ice wants to change the Okta URL to its own domain. In this lab, you will configure Okta and your DNS to change the Okta URL end-users will use. \n\n⏱️ **Duration:**     20 minutes"
+      "description": "# Lab 2.1 Configure a Custom Domain\n\n🎯 **Objective:**   Configure a custom domain in Okta and configure your DNS to support the custom URL. \n\n🎬 **Scenario**    Continuing with the white label experience, Okta Ice wants to change the Okta URL to its own domain. In this lab, you will configure Okta and your DNS to change the Okta URL end-users will use. \n\n⏱️ **Duration:**     20 minutes"
     },
     {
       "title": "Login to the Okta Admin Dashboard",

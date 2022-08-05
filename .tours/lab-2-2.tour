@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 2-2: Customize the Custom Okta-hosted Sign-In Widget\n\n🎯 **Objective:**  Customize the Okta-hosted Sign-In Widget.     \n\n🎬 **Scenario**    You will customize the Okta sign-in page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+      "description": "## Lab 2.2: Customize the Custom Okta-hosted Sign-In Widget\n\n🎯 **Objective:**  Customize the Okta-hosted Sign-In Widget.     \n\n🎬 **Scenario**    You will customize the Okta sign-in page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
     },
     {
       "title": "Access the Sign-in Page Code Editor",
