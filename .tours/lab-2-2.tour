@@ -1,10 +1,10 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#2 - Lab 2.2 Customize the Okta-hosted Sign-In Widget",
+  "title": "#2 - Lab 2.2 Customize the Okta Sign-In Page With Theme Builder",
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 2.2: Customize the Custom Okta-hosted Sign-In Widget\n\n🎯 **Objective:**  Customize the Okta-hosted Sign-In Widget.     \n\n🎬 **Scenario**    You will customize the Okta sign-in page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+      "description": "## Lab 2.2: Customize the Okta Sign-In Page With Theme Builder\n\n🎯 **Objective:**  Customize the Okta Sign-In Page with Okta Ice branding.    \n\n🎬 **Scenario**    Okta Ice needs a branded Sign-In Page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
     },
     {
       "title": "Access the Sign-in Page Code Editor",
@@ -185,7 +185,7 @@
     },
     {
       "title": "Customize the Primary and Secondary Colors",
-      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#CC99CC`\n\nChange the Secondary color to `#B4EDD2`"
+      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#E4AACD`\n\nChange the Secondary color to `#B4EDD2`"
     },
     {
       "title": "Customize the Logo",
@@ -204,12 +204,11 @@
       "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-In Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
     },
     {
-      "title": "Preview the Sign-In Page",
-      "description": "## Preview the Sign-In Page\n\nWe're going to navigate back to the Sign-in page code editor to preview the Sign In Page and add some additional customizations.\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nYou should now see a customized Sign-in Page, which we've achieved without changing any code."
+      "description": "## Preview the Sign-In Page\n\nWe're going to navigate back to the Sign-in page code editor to preview the Sign In Page and add some additional customizations.\n\n**Leave this page open for the next lab**\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nYou should now see a customized Sign-in Page, which we've achieved without changing any code.\n\n**Leave this page open for the next lab.**"
     },
     {
-      "title": "More Customization with the Sign-In Page Code Editor",
-      "description": "## More Customization with the Sign-In Page Code Editor\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Theme Builder. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Theme Builder can offer. For this, we use the integrated Sign-In Page code editor."
+      "title": "Lab Checkpoint",
+      "description": "## ✅  Checkpoint\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Theme Builder. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Theme Builder can offer. In the next lab, we use the integrated Sign-In Page code editor to achieve this."
     }
   ]
 }
