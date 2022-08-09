@@ -1,10 +1,10 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#2 - Lab 2.2 Customize the Okta Sign-In Page With Theme Builder",
+  "title": "#2 - Lab 2.2 Customize the Okta Sign-In Page With the Branding UI",
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 2.2: Customize the Okta Sign-In Page With Theme Builder\n\n🎯 **Objective:**  Customize the Okta Sign-In Page with Okta Ice branding.    \n\n🎬 **Scenario**    Okta Ice needs a branded Sign-In Page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+      "description": "## Lab 2.2: Customize the Okta Sign-In Page With the Branding UI\n🎯 **Objective:**  Customize the Okta Sign-In Page with Okta Ice branding.    \n\n🎬 **Scenario**    Okta Ice needs a branded Sign-In Page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
     },
     {
       "title": "Access the Sign-in Page Code Editor",

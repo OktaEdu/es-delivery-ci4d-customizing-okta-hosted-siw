@@ -1,6 +1,10 @@
-# Customize the Okta-Hosted SIW
+# Customize the Sign-In Page with the Okta-Hosted Sign-In Widget (Redirect Model)
 
-This repo contains everything you need to complete 
+This repo contains everything you need to complete the labs in this module.
+
+- Lab 2.1 Configure a Custom Domain
+- Lab 2.2 Customize the Okta Sign-In Page with the Branding UI 
+- Lab 2.3 Customize the Okta Sign-In Page with the Sign-In Page Code Editor
 
 ## How to Use
 
