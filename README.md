@@ -16,7 +16,7 @@ cd /es-delivery-ci4d-customize-okta-hosted-siw
 ```
 code .
 ```
-4. The CodeTour for Lab 2.1 should open automatically. If it does, press the `Start Tour` button. 
+4. The CodeTour for Lab 2.1 should open automatically. If it doesn't, press the `Start Tour` button. 
 
 ![Start Code Tour](./.tour-resources/start-tour.gif)
 
