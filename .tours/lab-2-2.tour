@@ -65,7 +65,7 @@
           "character": 51
         }
       },
-      "description": "## Sign-in Page Macro: `faviconUrl`\n\nThe `{{faviconUrl}}` macro inserts the URL for the favicon. The favicon can be changed in the Okta Theme Builder."
+      "description": "## Sign-in Page Macro: `faviconUrl`\n\nThe `{{faviconUrl}}` macro inserts the URL for the favicon. The favicon can be changed in the Okta Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -79,7 +79,7 @@
           "character": 25
         }
       },
-      "description": "## Sign-in Page Macro: `pageTitle`\n\nThe `{{pageTitle}}` macro inserts the page title set in the Okta Theme Builder."
+      "description": "## Sign-in Page Macro: `pageTitle`\n\nThe `{{pageTitle}}` macro inserts the page title set in the Okta Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -107,7 +107,7 @@
           "character": 87
         }
       },
-      "description": "## Sign-in Page Macro: `bgImageUrl`\n\nThe `{{bgImageUrl}}` macro inserts the URL to the background image configured in your Okta organization."
+      "description": "## Sign-in Page Macro: `bgImageUrl`\n\nThe `{{bgImageUrl}}` macro inserts the URL to the background image configured in your Okta organization. You can upload and set this background image in the Okta Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -163,7 +163,7 @@
           "character": 49
         }
       },
-      "description": "## SIW JavaScript: Creating an `OktaSignIn` Object\n\nThis line instantiates new `OktaSignIn` object with the configurations we have stored in `config`. This will be used to render the SIW in the following lines."
+      "description": "## SIW JavaScript: Creating an `OktaSignIn` Object\n\nThis line instantiates a new `OktaSignIn` object with the configurations we have stored in `config`. This will be used to render the SIW in the following lines."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -181,7 +181,7 @@
     },
     {
       "title": "Access the Theme Builder",
-      "description": "## Access the Theme Builder\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Theme Builder.\n\nNavigate to `Customize` > `Branding`\n\nUnder the `Theme` section, you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
+      "description": "## Access the Okta Branding UI\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Theme Builder.\n\nNavigate to `Customize` > `Branding`\n\nUnder the `Theme` section, you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
     },
     {
       "title": "Customize the Primary and Secondary Colors",
@@ -189,15 +189,15 @@
     },
     {
       "title": "Customize the Logo",
-      "description": "## Customize the Logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Click the pencil icon next to the `Logo` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-logo.png`\n\n![Our Custom Logo](./img/ice-logo.png)"
+      "description": "## Customize the Logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Click the pencil icon next to the `Logo` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-logo.png`\n\n![Our Custom Logo](./img/ice-logo.png)"
     },
     {
       "title": "Customize the Favicon",
-      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-favicon.png`\n\n![Our Custom Logo](./img/ice-favicon.png)"
+      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-favicon.png`\n\n![Our Custom Logo](./img/ice-favicon.png)"
     },
     {
       "title": "Customize the Background Image",
-      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\mod2\\img\\ice-cream-bg.png`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
+      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\okta-hosted-siw\\img\\ice-cream-bg.png`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
     },
     {
       "title": "Configure the Okta-hosted Sign-in Page",
@@ -208,7 +208,7 @@
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅  Checkpoint\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Theme Builder. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Theme Builder can offer. In the next lab, we use the integrated Sign-In Page code editor to achieve this."
+      "description": "## ✅  Checkpoint\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Branding UI. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Okta's Branding UI can offer. In the next lab, we use the integrated Sign-In Page code editor to achieve this."
     }
   ]
 }
