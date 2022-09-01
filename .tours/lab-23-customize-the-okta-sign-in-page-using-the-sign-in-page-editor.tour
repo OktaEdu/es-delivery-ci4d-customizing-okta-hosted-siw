@@ -57,7 +57,7 @@
     },
     {
       "title": "Inspect the SIW Main Container",
-      "description": "## Inspectg the SIW Main Container\n\nNext, let's find out what selector we can access to change the background color of the SIW. In your latest preview of the Sign-In Page, right click into the body of the SIW. Here find the selector `#okta-sign-in.auth-container.main-container` that we can use for this purpose.\n\n![Inspect SIW container](./.tour-resources/inspect-siw-container.gif)"
+      "description": "## Inspect the SIW Main Container\n\nNext, let's find out what selector we can access to change the background color of the SIW. In your latest preview of the Sign-In Page, right click into the body of the SIW. Here find the selector `#okta-sign-in.auth-container.main-container` that we can use for this purpose.\n\n![Inspect SIW container](./.tour-resources/inspect-siw-container.gif)"
     },
     {
       "file": "customized-sign-in-page-step10.html",
