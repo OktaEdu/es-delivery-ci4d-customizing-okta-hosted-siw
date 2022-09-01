@@ -15,7 +15,7 @@
     },
     {
       "file": "customized-sign-in-page-step4.html",
-      "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a pink hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the `Insert Code` link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #E4AACD;\n    }\n</style>\n```\n",
+      "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a pink hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the `Insert Code` link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #0E2D5B;\n    }\n</style>\n```\n",
       "line": 16
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "file": "customized-sign-in-page-step7.html",
-      "description": "## Update the SIW Form Header Font Color\n\nWe're going to add some more embedded CSS to change the color of the form header to match the Okta Ice pink of the other text in the SIW. \n\nNotice that this step highlights the line where you should be adding this code, which is just under the CSS we added in the previous step.\n\nAs always, we recommend manually typing in the following code segment, but you may alternatively use the `Insert Code` link.\n\n```css\n#okta-sign-in.auth-container h2 {\n    color: #E4AACD;\n}\n```",
+      "description": "## Update the SIW Form Header Font Color\n\nWe're going to add some more embedded CSS to change the color of the form header to match the Okta Ice dark blue of the other text in the SIW. \n\nNotice that this step highlights the line where you should be adding this code, which is just under the CSS we added in the previous step.\n\nAs always, we recommend manually typing in the following code segment, but you may alternatively use the `Insert Code` link.\n\n```css\n#okta-sign-in.auth-container h2 {\n    color: #E4AACD;\n}\n```",
       "line": 20
     },
     {
@@ -61,7 +61,7 @@
     },
     {
       "file": "customized-sign-in-page-step10.html",
-      "description": "## Update the SIW Background Color\n\nLet's change the background color of the SIW to a dark gray. We'll use the `#okta-sign-in.auth-container.main-container` selector to do this by adding to our embedded CSS code:\n\n```css\n#okta-sign-in.auth-container.main-container {\n    background: #444;\n}\n```\n",
+      "description": "## Update the SIW Header Background Color\n\nLet's change the background color of the SIW header to a dark blue. We'll use the `#okta-sign-in.auth-container .okta-sign-in-header` selector to do this by adding to our embedded CSS code:\n\n```css\n#okta-sign-in.auth-container .okta-sign-in-header {\n    background: #0E2D5B;\n}\n```\n",
       "line": 24
     },
     {
@@ -81,11 +81,11 @@
     },
     {
       "title": "Inspect Link Element",
-      "description": "## Inspect Link Element\n\nNow that the SIW has a darker background color, we should change the `Help` link to a lighter color. In your latest preview of the Sign-In Page, right click on the `Help` link at the bottom of the SIW and select `Inspect`\n\nHere we find the relevant selectors: `#okta-sign-in.auth-container .link` and `#okta-sign-in.auth-container .link::visited`\n\n![Inspect link element](./.tour-resources/inspect-link.gif)"
+      "description": "## Inspect Link Element\n\nLet's change the color of the `Help` so it stands out a bit more and matches our branding. In your latest preview of the Sign-In Page, right click on the `Help` link at the bottom of the SIW and select `Inspect`\n\nHere we find the relevant selectors: `#okta-sign-in.auth-container .link` and `#okta-sign-in.auth-container .link::visited`\n\n![Inspect link element](./.tour-resources/inspect-link.gif)"
     },
     {
       "file": "customized-sign-in-page-step12.html",
-      "description": "## Update the SIW Link Color\n\nWe're going to add to our embedded CSS at the indicated line of the HTML file. Not only are we going to define the link color, but we'll define the color for a visited link as well. We'll define both as white:\n\n```css\n  #okta-sign-in.auth-container .link:visited, \n  #okta-sign-in.auth-container .link {\n    color: #fff;\n  }\n```",
+      "description": "## Update the SIW Link Color\n\nWe're going to add to our embedded CSS at the indicated line of the HTML file. Not only are we going to define the link color, but we'll define the color for a visited link as well. We'll define both as a bright blue:\n\n```css\n  #okta-sign-in.auth-container .link:visited, \n  #okta-sign-in.auth-container .link {\n    color: #5AB9F2;\n  }\n```",
       "line": 28
     },
     {
