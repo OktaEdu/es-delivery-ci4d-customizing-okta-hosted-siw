@@ -177,7 +177,7 @@
           "character": 11
         }
       },
-      "description": "## SIW JavaScript: Rendering the Okta SIW\nThe `OktaSignIn` object is then used to call the `renderEl()` funtion to render the SIW. Let's take a look at the method signature to break down what's being passed to this method:\n\n```\n renderEl(renderOptions: RenderOptions, successFn?: RenderSuccessCallback, errorFn?: RenderErrorCallback): Promise<RenderResult> \n```\n\n### Render Options\nThis parameter takes render options for the SIW in the form of JSON data. It must include the `el` or `$el` property.\nIn this case, we're passing a CSS class `#okta-login-container`, which will render the SIW in a `div` of this class.\n\n### Success Callback\nThis parameter expects a function, which gets called upon successfully configuring and rendering the widget.\n\n### Error Callback\nThis paramater expects a function, which gets called if there is an error when configuring and rendering the widget. Currently, we are simply logging the error to console."
+      "description": "## SIW JavaScript: Rendering the Okta SIW\nThe `OktaSignIn` object is then used to call the `renderEl()` method to render the SIW. Let's take a look at the method signature to break down what's being passed to this method:\n\n```\n renderEl(renderOptions: RenderOptions, successFn?: RenderSuccessCallback, errorFn?: RenderErrorCallback): Promise<RenderResult> \n```\n\n### Render Options\nThis parameter takes render options for the SIW in the form of JSON data. It must include the `el` or `$el` property.\nIn this case, we're passing a CSS class `#okta-login-container`, which will render the SIW in a `div` of this class.\n\n### Success Callback\nThis parameter expects a function, which gets called upon successfully configuring and rendering the widget.\n\n### Error Callback\nThis paramater expects a function, which gets called if there is an error when configuring and rendering the widget. Currently, we are simply logging the error to console."
     },
     {
       "title": "Access the Theme Builder",
@@ -185,7 +185,7 @@
     },
     {
       "title": "Customize the Primary and Secondary Colors",
-      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#E4AACD`\n\nChange the Secondary color to `#B4EDD2`"
+      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#2d75bb`\n\nChange the Secondary color to `#c7e5f5`"
     },
     {
       "title": "Customize the Logo",
@@ -193,7 +193,7 @@
     },
     {
       "title": "Customize the Favicon",
-      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-favicon.png`\n\n![Our Custom Logo](./img/ice-favicon.png)"
+      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\favicon.png`\n\n![Our Custom Logo](./img/favicon.png)"
     },
     {
       "title": "Customize the Background Image",
