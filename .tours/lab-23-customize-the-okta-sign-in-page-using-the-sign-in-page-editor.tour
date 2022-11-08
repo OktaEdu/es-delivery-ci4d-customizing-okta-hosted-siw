@@ -3,7 +3,8 @@
   "title": "#3 - Lab 2.3 Customize the Okta Sign-In Page Using the Sign-In Page Code Editor",
   "steps": [
     {
-      "description": "## Lab 2.3: Customize the Okta Sign-In Page Using the Sign-In Page Code Editor\n\n🎯 **Objective:**  Further customize the Sign-In Page with the Sign-In Page Code Editor.\n\n🎬 **Scenario**    Okta Ice wants to further customize the Sign-In Page beyond what is offered by the Okta Branding UI.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1 and 2-2\n\n### Note about this lab:\nIn this lab, you will be adding code to the default Okta Sign-In Page html. For the best learning experience, you are highly encouraged to type the code in manually. \n\nTo provide a differentiated experience for learners of all types, we've included an `Insert Code` link after each coding segment. This inserts the code to the correct line(s) automatically. After you insert the code, you will still have to click `Next` to advance to the next lab step."
+      "description": "## Lab 2.3: Customize the Okta Sign-In Page Using the Sign-In Page Code Editor\n\n🎯 **Objective:**  Further customize the Sign-In Page with the Sign-In Page Code Editor.\n\n🎬 **Scenario**    Okta Ice wants to further customize the Sign-In Page beyond what is offered by the Okta Branding UI.\n\n⏱️ **Duration:**   30 minutes\n\n⚠️ **Prerequisite:** Lab 2-1 and 2-2\n\n### Note about this lab:\nIn this lab, you will be adding code to the default Okta Sign-In Page html. For the best learning experience, you are highly encouraged to type the code in manually. \n\nTo provide a differentiated experience for learners of all types, we've included an `Insert Code` link after each coding segment. This inserts the code to the correct line(s) automatically. After you insert the code, you will still have to click `Next` to advance to the next lab step.",
+      "title": "Lab Overview"
     },
     {
       "title": "Inspect the Sign-In Page Elements",
@@ -30,7 +31,7 @@
           "character": 1
         }
       },
-      "description": "## Preview Font Color Change in the Sign-In Page Code Editor\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`.\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Highlight the contents of the `HTML` box.\n4. Right click and select `Paste` to replace the code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe the font color change.\n\n![Preview font color change](./.tour-resources/preview-text-color.gif)\n\n"
+      "description": "## Preview Font Color Change in the Sign-In Page Code Editor\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`.\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents.\n4. Press `CTRL`+`V` to replace the existing code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe the font color change.\n\n![Preview font color change](./.tour-resources/preview-text-color.gif)\n\n"
     },
     {
       "title": "Inspect the SIW Header",
@@ -53,7 +54,7 @@
           "character": 1
         }
       },
-      "description": "## Preview Font Color Change of Form Header\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Highlight the contents of the `HTML` box.\n4. Right click and select `Paste` to replace the code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the font color of the form header now matches the other text in the SIW.\n\n![Preview font color change](./.tour-resources/preview-header-color.gif)\n\n"
+      "description": "## Preview Font Color Change of Form Header\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents.\n4. Press `CTRL`+`V` to replace the existing code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the font color of the form header now matches the other text in the SIW.\n\n![Preview font color change](./.tour-resources/preview-header-color.gif)\n\n"
     },
     {
       "title": "Inspect the SIW Main Container",
@@ -76,7 +77,7 @@
           "character": 1
         }
       },
-      "description": "## Preview the SIW Background Color Change\n\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Highlight the contents of the `HTML` box.\n4. Right click and select `Paste` to replace the code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the background color of the SIW has changed.\n\n![Preview bg color change](./.tour-resources/preview-bg-siw.gif)\n\n",
+      "description": "## Preview the SIW Background Color Change\n\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents.\n4. Press `CTRL`+`V` to replace the existing code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the background color of the SIW has changed.\n\n![Preview bg color change](./.tour-resources/preview-bg-siw.gif)\n\n",
       "title": "Preview the SIW Background Color Change"
     },
     {
