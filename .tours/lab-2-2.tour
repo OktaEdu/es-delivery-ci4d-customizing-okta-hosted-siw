@@ -36,7 +36,7 @@
           "character": 36
         }
       },
-      "description": "## Examine the Sign-in Page Macros\n\nThroughout the default Sign-in Page code, you will see entries surrounded by curly braces `{{}}` such as the one highlighted here. These are called **macros**. Macros generate code that can be applied in the Sign-In Page code editor. The data these macros depend upon are configurable in Okta's Theme Builder.  ",
+      "description": "## Examine the Sign-in Page Macros\n\nThroughout the default Sign-in Page code, you will see entries surrounded by curly braces `{{}}` such as the one highlighted here. These are called **macros**. Macros generate code that can be applied in the Sign-In Page code editor. The data these macros depend upon are configurable in Okta's Branding UI.  ",
       "title": "Sign-in Page Code Macros"
     },
     {
