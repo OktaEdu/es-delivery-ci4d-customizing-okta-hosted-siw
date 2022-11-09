@@ -8,7 +8,7 @@
     },
     {
       "title": "Inspect the Sign-In Page Elements",
-      "description": "## Inspect the Sign-In Page Elements\n\nYou should still have the Sign-In Page preview open from the last lab. If you do not have this page open, ensure you are signed in as your `oktatraining` and:\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nOn the preview of your Sign-In Page, right click on the page and select `Inspect` and ensure that you are viewing the `Elements` tab and the `Style` sub-tab.\n![Inspect Elements](./.tour-resources/inspect-element.gif)\n\nAlternatively, you can use the keyboard shortcut `SHIFT` + `CONTROL` + `C`"
+      "description": "## Inspect the Sign-In Page Elements\n\nYou should still have the Sign-In Page preview open from the last lab. If you do not have this page open, ensure you are signed in as your `oktatraining` and:\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nOn the preview of your Sign-In Page, right click on the page and select `Inspect` and ensure that you are viewing the `Elements` tab and the `Styles` sub-tab.\n![Inspect Elements](./.tour-resources/inspect-element.gif)\n\nAlternatively, you can use the keyboard shortcut `SHIFT` + `CONTROL` + `C`"
     },
     {
       "title": "Inspect the Form Label Element",
@@ -16,7 +16,7 @@
     },
     {
       "file": "customized-sign-in-page-step4.html",
-      "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a pink hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the `Insert Code` link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #0E2D5B;\n    }\n</style>\n```\n",
+      "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a blue hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the `Insert Code` link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #0E2D5B;\n    }\n</style>\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
       "line": 16
     },
     {
@@ -27,19 +27,19 @@
           "character": 1
         },
         "end": {
-          "line": 46,
+          "line": 50,
           "character": 1
         }
       },
-      "description": "## Preview Font Color Change in the Sign-In Page Code Editor\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`.\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents.\n4. Press `CTRL`+`V` to replace the existing code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe the font color change.\n\n![Preview font color change](./.tour-resources/preview-text-color.gif)\n\n"
+      "description": "## Preview Font Color Change in the Sign-In Page Code Editor\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your embedded CSS now appears in the code.\n\n7. Click the `Preview` button and observe the font color change.\n\n![Preview font color change](./.tour-resources/preview-text-color.gif)\n\n"
     },
     {
       "title": "Inspect the SIW Header",
-      "description": "## Inspect the SIW Form Header\n\nNotice that our font color change was not applied to the `Sign In` header on above the form in the SIW. Let's inspect the Sign-In Page code again. In your latest preview of the Sign-In Page, on the `Sign-In` text and select `Inspect`\n\nWhen we do this, we see that the font color for this element is specified in the selector `#okta-sign-in.auth-container h2`\n\n![Inspect the header text above the form](./.tour-resources/inspect-header.gif)\n\n"
+      "description": "## Inspect the SIW Form Header\n\nNotice that our font color change was not applied to the `Sign In` header on above the form in the SIW. Let's inspect the Sign-In Page code again. In your latest preview of the Sign-In Page, right click on on the `Sign-In` text and select `Inspect`\n\nWhen we do this, we see that the font color for this element is specified in the selector `#okta-sign-in.auth-container h2`\n\n![Inspect the header text above the form](./.tour-resources/inspect-header.gif)\n\n"
     },
     {
       "file": "customized-sign-in-page-step7.html",
-      "description": "## Update the SIW Form Header Font Color\n\nWe're going to add some more embedded CSS to change the color of the form header to match the Okta Ice dark blue of the other text in the SIW. \n\nNotice that this step highlights the line where you should be adding this code, which is just under the CSS we added in the previous step.\n\nAs always, we recommend manually typing in the following code segment, but you may alternatively use the `Insert Code` link.\n\n```css\n#okta-sign-in.auth-container h2 {\n    color: #E4AACD;\n}\n```",
+      "description": "## Update the SIW Form Header Font Color\n\nWe're going to add some more embedded CSS to change the color of the form header to match the Okta Ice dark blue of the other text in the SIW. \n\nNotice that this step highlights the line where you should be adding this code, which is just under the CSS we added in the previous step.\n\nAs always, we recommend manually typing in the following code segment, but you may alternatively use the `Insert Code` link.\n\n```css\n#okta-sign-in.auth-container h2 {\n    color: #0E2D5B;\n}\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
       "line": 20
     },
     {
