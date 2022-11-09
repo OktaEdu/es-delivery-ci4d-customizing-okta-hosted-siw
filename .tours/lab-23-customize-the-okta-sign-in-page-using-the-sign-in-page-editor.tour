@@ -54,15 +54,15 @@
           "character": 1
         }
       },
-      "description": "## Preview Font Color Change of Form Header\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents.\n4. Press `CTRL`+`V` to replace the existing code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the font color of the form header now matches the other text in the SIW.\n\n![Preview font color change](./.tour-resources/preview-header-color.gif)\n\n"
+      "description": "## Preview Font Color Change of Form Header\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Click the `Preview` button and observe the font color change of the header.\n\n![Preview font color change](./.tour-resources/preview-header-color.gif)\n\n"
     },
     {
       "title": "Inspect the SIW Main Container",
-      "description": "## Inspect the SIW Main Container\n\nNext, let's find out what selector we can access to change the background color of the SIW. In your latest preview of the Sign-In Page, right click into the body of the SIW. Here find the selector `#okta-sign-in.auth-container.main-container` that we can use for this purpose.\n\n![Inspect SIW container](./.tour-resources/inspect-siw-container.gif)"
+      "description": "## Inspect the SIW Header\n\nNext, let's find out what selector we can access to change the background color of the SIW header area. In your latest preview of the Sign-In Page, right click into the header area of the SIW. Here we see the selector `#okta-sign-in.auth-container .okta-sign-in-header`\n\n![Inspect SIW container](./.tour-resources/inspect-siw-container.gif)"
     },
     {
       "file": "customized-sign-in-page-step10.html",
-      "description": "## Update the SIW Header Background Color\n\nLet's change the background color of the SIW header to a dark blue. We'll use the `#okta-sign-in.auth-container .okta-sign-in-header` selector to do this by adding to our embedded CSS code:\n\n```css\n#okta-sign-in.auth-container .okta-sign-in-header {\n    background: #0E2D5B;\n}\n```\n",
+      "description": "## Update the SIW Header Background Color\nNotice that this step automatically opens our HTML file and selects the line where we can add to our code. Let's add some custom CSS that will change the background color of the SIW header to a dark blue. We'll use the `#okta-sign-in.auth-container .okta-sign-in-header` selector to do this.\n\nAs always, we recommend manually typing in the following code segment, but you may alternatively use the `Insert Code` link.\n\n```css\n#okta-sign-in.auth-container .okta-sign-in-header {\n    background: #0E2D5B;\n}\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
       "line": 24
     },
     {
@@ -77,16 +77,16 @@
           "character": 1
         }
       },
-      "description": "## Preview the SIW Background Color Change\n\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents.\n4. Press `CTRL`+`V` to replace the existing code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the background color of the SIW has changed.\n\n![Preview bg color change](./.tour-resources/preview-bg-siw.gif)\n\n",
-      "title": "Preview the SIW Background Color Change"
+      "description": "## Preview the SIW Header Background Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Click the `Preview` button and observe that the background color of the SIW header has changed.\n\n![Preview bg color change](./.tour-resources/preview-bg-siw.gif)\n\n",
+      "title": "Preview the SIW Header Background Color Change"
     },
     {
       "title": "Inspect Link Element",
-      "description": "## Inspect Link Element\n\nLet's change the color of the `Help` so it stands out a bit more and matches our branding. In your latest preview of the Sign-In Page, right click on the `Help` link at the bottom of the SIW and select `Inspect`\n\nHere we find the relevant selectors: `#okta-sign-in.auth-container .link` and `#okta-sign-in.auth-container .link::visited`\n\n![Inspect link element](./.tour-resources/inspect-link.gif)"
+      "description": "## Inspect Link Element\n\nLet's change the color of the `Help` so it stands out a bit more and matches our branding. In your latest preview of the Sign-In Page, right click on the `Help` link at the bottom of the SIW and select `Inspect`\n\nHere we find the relevant selectors: `#okta-sign-in.auth-container .link:link` and `#okta-sign-in.auth-container .link:visited`\n\n![Inspect link element](./.tour-resources/inspect-link.gif)"
     },
     {
       "file": "customized-sign-in-page-step12.html",
-      "description": "## Update the SIW Link Color\n\nWe're going to add to our embedded CSS at the indicated line of the HTML file. Not only are we going to define the link color, but we'll define the color for a visited link as well. We'll define both as a bright blue:\n\n```css\n  #okta-sign-in.auth-container .link:visited, \n  #okta-sign-in.auth-container .link {\n    color: #5AB9F2;\n  }\n```",
+      "description": "## Update the SIW Link Color\n\nWe're going to add to our embedded CSS at the indicated line of the HTML file. Not only are we going to define the link color, but we'll define the color for a visited link as well. We'll define both as a light blue.\n\nNotice that this step highlights the line where you should be adding this code, which is just under the CSS we added in the previous step.\n\nAs always, we recommend manually typing in the following code segment, but you may alternatively use the `Insert Code` link.\n\n```css\n  #okta-sign-in.auth-container .link:visited, \n  #okta-sign-in.auth-container .link:link {\n    color: #5AB9F2;\n  }\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
       "line": 28
     },
     {
@@ -101,7 +101,7 @@
           "character": 1
         }
       },
-      "description": "## Preview the Link Color Change\n\n\n\nNotice that this step has automatically highlighted the entire HTML file for you. \n\n1. Right click into the code frame and select `Copy`\n2. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n3. Highlight the contents of the `HTML` box.\n4. Right click and select `Paste` to replace the code with the contents of your clipboard.\n5. Scroll up and verify that your embedded CSS now appears in the code.\n6. Click the `Preview` button and observe that the color of the `Help` link in the SIW has changed to white.\n\n![Preview bg color change](./.tour-resources/preview-link.gif)"
+      "description": "## Preview the Link Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n\n7. Click the `Preview` button and observe that the color of the `Help` link in the SIW has changed to white.\n\n![Preview bg color change](./.tour-resources/preview-link.gif)"
     },
     {
       "title": "Save and Publish Changes",
