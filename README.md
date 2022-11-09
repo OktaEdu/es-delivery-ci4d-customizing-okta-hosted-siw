@@ -11,7 +11,7 @@ This repo contains everything you need to complete the labs in this module.
 ## How to Start the Labs
 
 
-These labs are guided by a VSCode plugin called CodeTour. To start Lab 1.2, first expand the **CODETOUR** tab on the lefthand side of VSCode. Then press the ![Start Tour](./.tour-resources/play.png) button next to Lab 1.2.
+These labs are guided by a VSCode plugin called CodeTour. To start Lab 2.1, first expand the **CODETOUR** tab on the lefthand side of VSCode. Then press the ![Start Tour](./.tour-resources/play.png) button next to Lab 2.1.
 
 ![Start Code Tour](./.tour-resources/start-tour.gif)
 
