@@ -180,8 +180,8 @@
       "description": "## SIW JavaScript: Rendering the Okta SIW\nThe `OktaSignIn` object is then used to call the `renderEl()` method to render the SIW. Let's take a look at the method signature to break down what's being passed to this method:\n\n```\n renderEl(renderOptions: RenderOptions, successFn?: RenderSuccessCallback, errorFn?: RenderErrorCallback): Promise<RenderResult> \n```\n\n### Render Options\nThis parameter takes render options for the SIW in the form of JSON data. It must include the `el` or `$el` property.\nIn this case, we're passing a CSS class `#okta-login-container`, which will render the SIW in a `div` of this class.\n\n### Success Callback\nThis parameter expects a function, which gets called upon successfully configuring and rendering the widget.\n\n### Error Callback\nThis paramater expects a function, which gets called if there is an error when configuring and rendering the widget. Currently, we are simply logging the error to console."
     },
     {
-      "title": "Access the Theme Builder",
-      "description": "## Access the Okta Branding UI\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Theme Builder.\n\nNavigate to `Customize` > `Branding`\n\nUnder the `Theme` section, you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
+      "title": "Access the Okta Branding UI",
+      "description": "## Access the Okta Branding UI\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Branding UI.\n\nNavigate to `Customize` > `Branding`\n\nUnder the `Theme` section, you can define:\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
     },
     {
       "title": "Customize the Primary and Secondary Colors",
@@ -197,7 +197,7 @@
     },
     {
       "title": "Customize the Background Image",
-      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\okta-hosted-siw\\img\\ice-cream-bg.png`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\nClick `Save Changes`"
+      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-cream-bg.png` and, finally, click `Save Changes`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\n"
     },
     {
       "title": "Configure the Okta-hosted Sign-in Page",
