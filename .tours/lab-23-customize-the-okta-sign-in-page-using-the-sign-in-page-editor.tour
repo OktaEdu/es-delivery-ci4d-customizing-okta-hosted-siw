@@ -57,7 +57,7 @@
       "description": "## Preview Font Color Change of Form Header\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Click the `Preview` button and observe the font color change of the header.\n\n![Preview font color change](./.tour-resources/preview-header-color.gif)\n\n"
     },
     {
-      "title": "Inspect the SIW Main Container",
+      "title": "Inspect the SIW Header",
       "description": "## Inspect the SIW Header\n\nNext, let's find out what selector we can access to change the background color of the SIW header area. In your latest preview of the Sign-In Page, right click into the header area of the SIW. Here we see the selector `#okta-sign-in.auth-container .okta-sign-in-header`\n\n![Inspect SIW container](./.tour-resources/inspect-siw-container.gif)"
     },
     {
@@ -77,7 +77,7 @@
           "character": 1
         }
       },
-      "description": "## Preview the SIW Header Background Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Click the `Preview` button and observe that the background color of the SIW header has changed.\n\n![Preview bg color change](./.tour-resources/preview-bg-siw.gif)\n\n",
+      "description": "## Preview the SIW Header Background Color Change\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Click the `Preview` button and observe that the background color of the SIW header has changed.\n\n![Preview bg color change](./.tour-resources/preview-bg-siw.gif)\n\n",
       "title": "Preview the SIW Header Background Color Change"
     },
     {
