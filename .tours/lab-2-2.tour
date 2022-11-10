@@ -208,7 +208,7 @@
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅  Checkpoint\n\nWe saw how we could customize the SIW without touching the Sign-In Page code through Okta's Branding UI. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Okta's Branding UI can offer. In the next lab, we use the integrated Sign-In Page code editor to achieve this."
+      "description": "## ✅  Checkpoint\n\nWe have seen how we could customize the SIW without touching the Sign-In Page code through Okta's Branding UI. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Okta's Branding UI can offer. In the next lab, we use the integrated Sign-In Page code editor to achieve this."
     }
   ]
 }
