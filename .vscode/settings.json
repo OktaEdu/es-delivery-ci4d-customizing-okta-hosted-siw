@@ -1,0 +1,27 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": false,
+    // Enable per-language
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+},
+  "workbench.sideBar.location": "left",
+  "codetour.promptForWorkspaceTours": true,
+  "codetour.showMarkers": false
+}
