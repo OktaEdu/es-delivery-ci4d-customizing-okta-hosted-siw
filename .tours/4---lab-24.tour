@@ -12,14 +12,14 @@
     },
     {
       "title": "Edit the Customer Rewards App",
-      "description": "## Edit the Customer Rewards App\n\n1. Notice that `rewards.html` has been opened here for you and that the value of `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. Save `rewards.html`",
+      "description": "## Edit the Customer Rewards App\n\n1. Notice that `rewards.html` has been opened here for you and that the line defining `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
       "file": "redirect/rewards.html",
       "line": 17
     
     },
     {
       "title": "Edit the Franchisee CRM App",
-      "description": "## Edit the Franchisee CRM App\n\n1. Notice that `crm.html` has been opened here for you and that the value of `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. Save `crm.html`",
+      "description": "## Edit the Franchisee CRM App\n\n1. Notice that `crm.html` has been opened here for you and that the line defining `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.`",
       "file": "redirect/crm.html",
       "line": 17
     },
