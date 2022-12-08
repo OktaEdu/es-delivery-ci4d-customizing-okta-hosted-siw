@@ -1,0 +1,35 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#4 - Lab 2.4 Configure the Redirect Apps to Use the Custom Domain",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 2.4: Configure the Redirect Apps to Use the Custom Domain\n\n🎯 **Objective:** Configure the redirect applications we set up previously to use the custom domain when redirecting users to the Okta-hosted Sign In Widget.\n\n🎬 **Scenario** When users authenticate into an Okta Ice app that uses the Okta-hosted Sign In Widget, they should be redirected to the widget through the custom URL rather than the Okta URL.\n\n⏱️ **Duration:** 10 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+    },
+    {
+      "title": "Copy Redirect Applications",
+      "description": "## Copy Redirect Applications\n\nClick [here](command:codetour.sendTextToTerminal?[\"mkdir redirect; cp ../01-introducing-okta/redirect/* redirect\"]) to copy the `redirect` directory to this workspace."
+    },
+    {
+      "title": "Edit the Customer Rewards App",
+      "description": "## Edit the Customer Rewards App\n\n1. Notice that `rewards.html` has been opened here for you and that the value of `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. Save `rewards.html`",
+      "file": "redirect/rewards.html",
+      "line": 17
+    
+    },
+    {
+      "title": "Edit the Franchisee CRM App",
+      "description": "## Edit the Franchisee CRM App\n\n1. Notice that `crm.html` has been opened here for you and that the value of `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. Save `crm.html`",
+      "file": "redirect/crm.html",
+      "line": 17
+    },
+    {
+      "title": "Test Signing in with a Custom Domain",
+      "description": "## Test Signing in with a Custom Domain\n\n1. Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Customer Rewards (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!"
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": "## ✅ Checkpoint\n\nAt this point, you've set up the Rewards and CRM applications to use the custom domain when redirecting to the Okta-hosted Sign In Widget for authentication. \n\n## 🎉 End of Module 2 Labs\n\n**You may close this workspace project, ensuring all changes were saved.**"
+    }
+  ]
+}
