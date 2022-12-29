@@ -22,7 +22,7 @@
           "character": 1
         }
       },
-      "description": "## The Default Sign-in Page Code\n\nThe code from the default Okta-hosted sign-in Page has been copied here so we can explore it more in depth. You can customize the Okta-hosted sign-in page, not only by modifying the code in the Sign-in Page Code Editor, but by configuring settings in Okta's Branding UI. Your Okta org must have Branding enabled to use these macros in the Sign In Page code editor."
+      "description": "## The Default Sign-in Page Code\n\nThe code from the default Okta-hosted sign-in Page has been copied here so we can explore it more in depth. You can customize the Okta-hosted sign-in page, not only by modifying the code in the Sign-in Page Code Editor, but by configuring settings in Okta's Branding UI. Your Okta org must have Branding enabled to use Okta's Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
