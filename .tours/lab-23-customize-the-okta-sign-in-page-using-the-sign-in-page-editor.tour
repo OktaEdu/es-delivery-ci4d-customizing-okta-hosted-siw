@@ -101,11 +101,11 @@
           "character": 1
         }
       },
-      "description": "## Preview the Link Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n\n7. Click the `Preview` button and observe that the color of the `Help` link in the SIW has changed to white.\n\n![Preview bg color change](./.tour-resources/preview-link.gif)"
+      "description": "## Preview the Link Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n\n7. Click the `Preview` button and observe that the color of the `Help` link in the SIW has changed to cyan.\n\n![Preview bg color change](./.tour-resources/preview-link.gif)"
     },
     {
       "title": "Save and Publish Changes",
-      "description": "## Save and Publish Changes\n\nIf there's time remaining, feel free to continue tinkering and finding out what else you can customize here. When you're done, confirm the custom code change by clicking the `Save and Publish` button in the Sign-In Page Code Editor."
+      "description": "## Save and Publish Changes\n\nIf there's time remaining, feel free to continue tinkering and finding out what else you can customize here. When you're done, confirm the custom code change by clicking the `Save and Publish` button in the Sign-In Page Code Editor. There will be a modal dialog that pops up. Confirm the save and publish by clicking the appropriate button."
     },
     {
       "title": "Lab Checkpoint",
