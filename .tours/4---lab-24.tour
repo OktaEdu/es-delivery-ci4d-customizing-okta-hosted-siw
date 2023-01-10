@@ -15,7 +15,6 @@
       "description": "## Edit the Customer Rewards App\n\n1. Notice that `rewards.html` has been opened here for you and that the line defining `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
       "file": "redirect/rewards.html",
       "line": 17
-    
     },
     {
       "title": "Edit the Franchisee CRM App",
@@ -25,7 +24,7 @@
     },
     {
       "title": "Test Signing in with a Custom Domain",
-      "description": "## Test Signing in with a Custom Domain\n\n1. Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Customer Rewards (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!"
+      "description": "## Test Signing in with a Custom Domain\n\n1. Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Once the web server is successfully launched, you'll see the following message in the terminal: `Serving HTTP on :: port 8080 (http://[::]:8080/) ...`\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Customer Rewards (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!"
     },
     {
       "title": "Lab Checkpoint",
