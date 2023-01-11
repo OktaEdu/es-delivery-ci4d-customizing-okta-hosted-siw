@@ -7,6 +7,10 @@
       "description": "## Lab 2.4: Configure the Redirect Apps to Use the Custom Domain\n\n🎯 **Objective:** Configure the redirect applications we set up previously to use the custom domain when redirecting users to the Okta-hosted Sign In Widget.\n\n🎬 **Scenario** When users authenticate into an Okta Ice app that uses the Okta-hosted Sign In Widget, they should be redirected to the widget through the custom URL rather than the Okta URL.\n\n⏱️ **Duration:** 10 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
     },
     {
+      "title": "Configure Authorization Server",
+      "description": "1. Ensure you're logged into the Okta Admin Dashboard as `oktatraining`\n2. In the Admin menu, navigate to `Security` > `API`\n3. Within the **Authorization Servers** table, local the `default` entry and click the blue pencil icon.\n4. On the following screen, click `Edit`\n5. In the `Issuer` section, select `Custom URL` from the drop down menu.\n6. Click `Save`\n7. **Logout** of Okta."
+    },
+    {
       "title": "Copy Redirect Applications",
       "description": "## Copy Redirect Applications\n\nClick [here](command:codetour.sendTextToTerminal?[\"mkdir redirect; cp ../01-introducing-okta/redirect/* redirect\"]) to copy the `redirect` directory to this workspace."
     },
@@ -24,7 +28,7 @@
     },
     {
       "title": "Test Signing in with a Custom Domain",
-      "description": "## Test Signing in with a Custom Domain\n\n1. Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Once the web server is successfully launched, you'll see the following message in the terminal: `Serving HTTP on :: port 8080 (http://[::]:8080/) ...`\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Customer Rewards (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!"
+      "description": "## Test Signing in with a Custom Domain\n\n1. If you're not already logged out of Okta, log out now.\n2.  Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Once the web server is successfully launched, you'll see the following message in the terminal: `Serving HTTP on :: port 8080 (http://[::]:8080/) ...`\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Customer Rewards (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!\n\n5. Optionally log in as `soraya.esfeh@oktaice.com` / `Tra!nme4321` and log out when finished."
     },
     {
       "title": "Lab Checkpoint",
