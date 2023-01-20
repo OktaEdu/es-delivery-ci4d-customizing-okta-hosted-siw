@@ -36,8 +36,8 @@
           "character": 36
         }
       },
-      "description": "## Examine the Sign-in Page Macros\n\nThroughout the default Sign-in Page code, you will see entries surrounded by curly braces `{{}}` such as the one highlighted here. These are called **macros**. Macros generate code that can be applied in the Sign-In Page code editor. The data these macros depend upon are configurable in Okta's Branding UI.  ",
-      "title": "Sign-in Page Code Macros"
+      "description": "## Examine the Sign-in Page Mustache Variables\n\nThroughout the default Sign-in Page code, you will see variables surrounded by curly braces `{{}}` such as the one highlighted here. This is because the Okta Sign In Page template uses the Mustache templating language in its HTML. These variables reference relevant values for the Sign In Page to load such as the favicon URL. ",
+      "title": "Sign-in Page Code Mustache Variables"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -51,7 +51,8 @@
           "character": 37
         }
       },
-      "description": "## Sign-in Page Macro: `themedStylesUrl`\n\nThe macro `{{themedStylesUrl}}` generates a CSS file that defines the primary and secondary colors for this page."
+      "description": "## Sign-in Page Variable: `themedStylesUrl`\n\nThe variable `{{themedStylesUrl}}` generates a CSS file that defines the primary and secondary colors for this page.",
+      "title": "Sign-in Page Variable: themedStylesUrl"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -65,7 +66,7 @@
           "character": 51
         }
       },
-      "description": "## Sign-in Page Macro: `faviconUrl`\n\nThe `{{faviconUrl}}` macro inserts the URL for the favicon. The favicon can be changed in the Okta Branding UI."
+      "description": "## Sign-in Page Variable: `faviconUrl`\n\nThe `{{faviconUrl}}` variable inserts the URL for the favicon. The favicon can be changed in the Okta Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -79,7 +80,7 @@
           "character": 25
         }
       },
-      "description": "## Sign-in Page Macro: `pageTitle`\n\nThe `{{pageTitle}}` macro inserts the page title set in the Okta Branding UI."
+      "description": "## Sign-in Page Variable: `pageTitle`\n\nThe `{{pageTitle}}` variable inserts the page title set in the Okta Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -93,7 +94,7 @@
           "character": 32
         }
       },
-      "description": "## Sign-in Page Macro: `SignInWidgetResource`\n\nThe `SignInWidgetResource` inserts the JavaScript and CSS files required to use the Okta Sign-In Widget."
+      "description": "## Sign-in Page Variable: `SignInWidgetResource`\n\nThe `SignInWidgetResource` variable loads the JavaScript and CSS files required to use the Okta Sign-In Widget."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -107,7 +108,7 @@
           "character": 87
         }
       },
-      "description": "## Sign-in Page Macro: `bgImageUrl`\n\nThe `{{bgImageUrl}}` macro inserts the URL to the background image configured in your Okta organization. You can upload and set this background image in the Okta Branding UI."
+      "description": "## Sign-in Page Variable: `bgImageUrl`\n\nThe `{{bgImageUrl}}` variable inserts the URL to the background image configured in your Okta organization. You can upload and set this background image in the Okta Branding UI."
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -121,7 +122,7 @@
           "character": 19
         }
       },
-      "description": "## Sign-in Page Macro: `OktaUtil`\n\nDefines a global `OktaUtil` JavaScript object that contains methods used to complete the Okta sign-in flow. When an application uses the Okta-hosted sign-in page to sign a user in, information (called request context) is available about the target application and the request."
+      "description": "## Sign-in Page Variable: `OktaUtil`\n\nDefines a global `OktaUtil` JavaScript object that contains methods used to complete the Okta sign-in flow. When an application uses the Okta-hosted sign-in page to sign a user in, information (called request context) is available about the target application and the request."
     },
     {
       "file": "default-okta-sign-in-page.html",
