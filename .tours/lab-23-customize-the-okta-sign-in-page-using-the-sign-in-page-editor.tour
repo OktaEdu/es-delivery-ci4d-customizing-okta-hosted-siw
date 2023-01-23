@@ -8,7 +8,7 @@
     },
     {
       "title": "Inspect the Sign-In Page Elements",
-      "description": "## Inspect the Sign-In Page Elements\n\nYou should still have the Sign-In Page preview open from the last lab. If you do not have this page open, ensure you are signed in as your `oktatraining` and:\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nOn the preview of your Sign-In Page, right click on the page and select `Inspect` and ensure that you are viewing the `Elements` tab and the `Styles` sub-tab.\n![Inspect Elements](./.tour-resources/inspect-element.gif)\n\nAlternatively, you can use the keyboard shortcut `SHIFT` + `CONTROL` + `C`"
+      "description": "## Inspect the Sign-In Page Elements\n\nYou should still have the Sign-In Page preview open from the last lab. If you do not have this page open, ensure you are signed in as your `oktatraining` and:\n\n1. Navigate to `Customizations` > `Branding`\n2. In the **Pages** section, find `Sign-in page` and click the `Edit` button.\n3. Click `Visit page`\n\n\nOn the preview of your Sign-In Page, right click on the page and select `Inspect` and ensure that you are viewing the `Elements` tab and the `Styles` sub-tab.\n![Inspect Elements](./.tour-resources/inspect-element.gif)\n\nAlternatively, you can use the keyboard shortcut `SHIFT` + `CONTROL` + `C`"
     },
     {
       "title": "Inspect the Form Label Element",
