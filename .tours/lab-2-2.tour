@@ -201,15 +201,15 @@
       "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-cream-bg.png` and, finally, click `Save Changes`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\n"
     },
     {
-      "title": "Configure the Okta-hosted Sign-in Page",
-      "description": "Now that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-In Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
+      "title": "Apply the Theme to the Sign-in Page",
+      "description": "## Apply the Theme to the Sign-in Page\n\nNow that we have customized our theme, we need to apply it to our Sign-in page. \n\n1. In the section labeled `Pages`, click `Edit` on the item labelled `Okta-hosted Sign-In Page`\n2. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n3. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n4. Click `Save and Publish`\n\n"
     },
     {
-      "description": "## Preview the Sign-In Page\n\nWe're going to navigate back to the Sign-in page code editor to preview the Sign In Page and add some additional customizations.\n\n**Leave this page open for the next lab**\n\n1. Navigate to `Customizations` > `Sign-in page code editor`\n2. Click `Preview`\n\nYou should now see a customized Sign-in Page, which we've achieved without changing any code.\n\n**Leave this page open for the next lab.**"
+      "description": "## Preview the Sign-In Page\n\nNotice that you can see a preview of the Sign-In Page to the right. \n\nTo see a live version of this page, click the `Visit page` link near the top of the page.\n\n**Keep your Sign-In Page open for the next lab**"
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅  Checkpoint\n\nWe have seen how we could customize the SIW without touching the Sign-In Page code through Okta's Branding UI. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-In Page beyond what Okta's Branding UI can offer. In the next lab, we use the integrated Sign-In Page code editor to achieve this."
+      "description": "## ✅  Checkpoint\nWe have seen how we could customize the SIW without touching the Sign-in Page code through Okta's Branding UI. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-in Page beyond what Okta's Branding UI can offer. In the next lab, we use the integrated Sign-in Page code editor to achieve this."
     }
   ]
 }
