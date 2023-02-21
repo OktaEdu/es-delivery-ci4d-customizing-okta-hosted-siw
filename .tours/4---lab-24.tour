@@ -28,7 +28,7 @@
     },
     {
       "title": "Test Signing in with a Custom Domain",
-      "description": "## Test Signing in with a Custom Domain\n\n1. If you're not already logged out of Okta, log out now.\n2.  Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Once the web server is successfully launched, you'll see the following message in the terminal: `Serving HTTP on :: port 8080 (http://[::]:8080/) ...`\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Customer Rewards (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!\n\n5. Optionally log in as `soraya.esfeh@oktaice.com` / `Tra!nme4321` and log out when finished."
+      "description": "## Test Signing in with a Custom Domain\n\n1. If you're not already logged out of Okta, log out now.\n2.  Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"]).\n\n2. Once the web server is successfully launched, you'll see the following message in the terminal: `Serving HTTP on :: port 8080 (http://[::]:8080/) ...`\n\n2. Open the Chrome browser and navigate to http://localhost:8080\n\n3. Click on `Rewards App (Redirect)`\n\n4. Notice that you are now redirected to the Okta-hosted Sign In Widget via your custom URL!\n\n5. Optionally log in as `soraya.esfeh@oktaice.com` / `Tra!nme4321` and log out when finished."
     },
     {
       "title": "Lab Checkpoint",
