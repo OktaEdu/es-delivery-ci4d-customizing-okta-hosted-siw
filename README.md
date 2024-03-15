@@ -1,5 +1,7 @@
 [![Okta Training](./.tour-resources/oktaeduservices.png "Okta Education Services")](https://www.okta.com/services/training/)
 
+#### Disclaimer: The following is intended for educational purposes only. Not meant for production.
+
 # Customize the Sign-In Page with the Okta-Hosted Sign-In Widget (Redirect Model)
 
 This repo contains everything you need to complete the labs in this module.
