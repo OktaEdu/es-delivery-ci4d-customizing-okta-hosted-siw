@@ -1,0 +1,11 @@
+{
+  "name": "Lab Deploy Redirect Authentication with the Okta-Hosted Sign In Widget",
+  "version": "1.0",
+  "unauthenticatedTour": ".tours/lab-1-1.tour",
+  "postConfigureTour": ".tours/lab-1-1.tour",
+  "clients": [
+    {
+ 
+    }
+  ]
+}
