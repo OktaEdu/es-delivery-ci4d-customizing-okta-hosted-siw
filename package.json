@@ -13,7 +13,7 @@
     "url": "git+https://github.com/OktaEdu/es-delivery-ci4d-customizing-okta-hosted-siw.git"
   },
   "scripts": {
-    "init": "concurrently \"npm:init:dependencies\""
+
   },
   "keywords": [
     "okta",
