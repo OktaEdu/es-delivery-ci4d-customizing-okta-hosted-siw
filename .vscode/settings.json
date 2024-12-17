@@ -1,4 +1,5 @@
 {
+  "comments.maxHeight": false,
   "editor.minimap.enabled": false,
   "editor.formatOnSave": false,
     // Enable per-language
@@ -19,9 +20,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
-},
-  "workbench.sideBar.location": "left",
-  "codetour.promptForWorkspaceTours": true,
-  "codetour.showMarkers": false
+    "source.fixAll.eslint": "never"
+  },
+  "workbench.sideBar.location": "right",
+  "codetour.promptForWorkspaceTours": false,
+  "codetour.showMarkers": false,
 }
