@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#4 - Lab 2.4 Configure the Redirect Apps to Use the Custom Domain",
+  "title": "#8 - Configure the Redirect Apps to Use the Custom Domain",
   "steps": [
     {
       "title": "Lab Overview",

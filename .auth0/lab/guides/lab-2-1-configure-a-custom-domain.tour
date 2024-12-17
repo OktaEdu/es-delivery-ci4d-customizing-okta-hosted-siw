@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#1 - Lab 2.1 Configure A Custom Domain",
+  "title": "#5 - Configure A Custom Domain",
   "steps": [
     {
       "title": "Lab Overview",

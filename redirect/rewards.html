@@ -14,8 +14,8 @@
 
     <script type="text/javascript">
       // TODO: UPDATE THESE FOR YOUR OKTA TENANT
-      var baseOktaURL = "https://oktaice########.oktapreview.com"; // 👈 update with your Okta Org URL
-      var appClientID = "XXXXXXXXXXXXXXXXXXXXXXX"; // 👈 update with your Rewards App Cliend ID
+      var baseOktaURL = 'https://{domain}.okta.com'; // 👈 update with your Okta Org URL
+      var appClientID = 'XXXXXXXXXXXXXXXXXXXXXXX'; // 👈 update with your Rewards App Cliend ID
 
       // Bootstrap the AuthJS Client
       const authClient = new OktaAuth({
@@ -24,41 +24,41 @@
         clientId: appClientID,
         redirectUri:
           window.location.protocol +
-          "//" +
+          '//' +
           window.location.hostname +
-          ":" +
+          ':' +
           window.location.port +
           window.location.pathname, // full Path to this file.
-        issuer: baseOktaURL + "/oauth2/default",
+        issuer: baseOktaURL + '/oauth2/default',
       });
 
       if (authClient.isLoginRedirect()) {
         // this is just for logging if we detect the user doesn't have access to the app.
         var queryString = window.location.search;
-        if (queryString.search("error") != -1) {
-          queryString = queryString.replace(/[^a-z0-9]/gi, " ");
+        if (queryString.search('error') != -1) {
+          queryString = queryString.replace(/[^a-z0-9]/gi, ' ');
           errorString = queryString
             .substring(
-              queryString.search("error") + "error".length,
-              queryString.search("error description")
+              queryString.search('error') + 'error'.length,
+              queryString.search('error description')
             )
             .toUpperCase();
 
-          window.addEventListener("load", function () {
-            const str1 = document.createElement("p");
+          window.addEventListener('load', function () {
+            const str1 = document.createElement('p');
             str1.innerHTML = `<b>${errorString}</b><br><b>😢</b>`;
-            document.getElementById("content-jwt").appendChild(str1);
+            document.getElementById('content-jwt').appendChild(str1);
           });
         }
         // Parse token from redirect url
-        console.log("Parse token from redirect url");
+        console.log('Parse token from redirect url');
         authClient.token
           .parseFromUrl()
           .then((data) => {
             const { idToken } = data.tokens;
 
             // Display the Token
-            const str1 = document.createElement("p");
+            const str1 = document.createElement('p');
             str1.innerHTML = `<b>${idToken.claims.email}</b> (email)<br /><b>${
               idToken.claims.sub
             }</b> (sub)<br /><br />Token Response:<br /><code style="word-wrap: break-word;">${JSON.stringify(
@@ -66,7 +66,7 @@
             )}</code><br /><br/>Parsed from JWT<br />Client ID: <b>${
               authClient.options.clientId
             }</b><br />Issuer: <b>${authClient.options.issuer}</b>`;
-            document.getElementById("content-jwt").appendChild(str1);
+            document.getElementById('content-jwt').appendChild(str1);
           })
           .catch(function (err) {
             // handle OAuthError
@@ -74,9 +74,9 @@
           });
       } else {
         // Always Redirect to get a "Fresh JWT" - Skipping the Token Manager in this example
-        console.log("Attempt to retrieve ID Token from redirect");
+        console.log('Attempt to retrieve ID Token from redirect');
         authClient.token.getWithRedirect({
-          responseType: "id_token",
+          responseType: 'id_token',
         });
       }
     </script>

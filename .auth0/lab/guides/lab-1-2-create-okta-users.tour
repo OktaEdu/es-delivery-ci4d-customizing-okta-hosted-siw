@@ -1,25 +1,25 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#3 - Lab 1.3 Create Okta Users",
+  "title": "#3 - Create Okta Users",
   "steps": [
     {
-      "title": "Lab Overview",
-      "description": "  ## Lab 1.3 Create Okta Users\n  \n  🎯 **Objective**:   Create some End User accounts and assign them to Okta Groups for testing configurations.\n\n  🎬 **Scenario**:    We'll need some End Users to test out the Franchisee and Customer experience.\n\n  ⏱️ **Duration**:   15 minutes"
+      "title": "Lab overview",
+      "description": "  ## Create Okta Users\n  \n  🎯 **Objective**:   Create some End User accounts and assign them to Okta Groups for testing configurations.\n\n  🎬 **Scenario**:    We'll need some End Users to test out the Franchisee and Customer experience.\n\n  ⏱️ **Duration**:   15 minutes"
     },
     {
       "title": "Navigate to the People Directory",
-      "description": "## Navigate to the People Directory\n\n1. Ensure you are signed in as your Super Admin account, `oktatraining`.\n\n2. In the Admin Dashboard, select `Directory` > `People`."
+      "description": "## Navigate to the People Directory\n\n1. Ensure you are signed in as your Super Admin account.\n\n2. In the Admin Dashboard, select `Directory` > `People`."
     },
     {
-      "title": "Create and Add a Test User to the Franchisee Group",
-      "description": "## Create and Add a Test User to the Franchisee Group\n\n1. Click the `Add Person` button.\n2. Enter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Kay`                                |\n| Last name                                 |  `West`                               |\n| Username                                  |  `kay.west@oktaice.com`                 |\n| Primary email                             |  `kay.west@oktaice.com`                 |\n| Group | `Franchisees`|\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\n\nLast, click the `Save and Add Another` button."
+      "title": "Create and add a test user to the Franchisee group",
+      "description": "## Create and add a test user to the Franchisee group\n\n1. Click the `Add Person` button.\n2. Enter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Kay`                                |\n| Last name                                 |  `West`                               |\n| Username                                  |  `kay.west@oktaice.com`                 |\n| Primary email                             |  `kay.west@oktaice.com`                 |\n| Group | `Franchisees`|\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\n\nLast, click the `Save and Add Another` button."
     },
     {
-      "title": "Create and Add a Test User to the Customer Group",
-      "description": "## Create and Add a Test User to the Customer Group\nEnter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Soraya`                                |\n| Last name                                 |  `Esfeh`                               |\n| Username                                  |  `soraya.esfeh@oktaice.com`                 |\n| Primary email                             |  `soraya.esfeh@oktaice.com`                 |\n| Groups | `Customers`|\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\n\nLast, click the `Save` button."
+      "title": "Create and add a test user to the Customer group",
+      "description": "## Create and add a test user to the Customer group\nEnter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Soraya`                                |\n| Last name                                 |  `Esfeh`                               |\n| Username                                  |  `soraya.esfeh@oktaice.com`                 |\n| Primary email                             |  `soraya.esfeh@oktaice.com`                 |\n| Groups | `Customers`|\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\n\nLast, click the `Save` button."
     },
     {
-      "title": "Lab Checkpoint",
+      "title": "Lab checkpoint",
       "description": "## ✅ Checkpoint\n\nYou now have a test user in the Franchisee group and a test user in the Customer group.\n"
     }
   ]
