@@ -3,12 +3,12 @@
   "title": "#6 - Customize the Okta Sign-In Page With the Branding UI",
   "steps": [
     {
-      "title": "Lab Overview",
-      "description": "## Lab 2.2: Customize the Okta Sign-In Page With the Branding UI\n🎯 **Objective:**  Customize the Okta Sign-In Page with Okta Ice branding.    \n\n🎬 **Scenario**    Okta Ice needs a branded Sign-In Page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
+      "title": "Lab overview",
+      "description": "## Customize the Okta Sign-In Page With the Branding UI\n🎯 **Objective:**  Customize the Okta Sign-In Page with Okta Ice branding.    \n\n🎬 **Scenario**    Okta Ice needs a branded Sign-In Page for a complete white label experience.\n\n⏱️ **Duration:**   20 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
     },
     {
       "title": "Access the Sign-in Page Code Editor",
-      "description": "## Access the Sign-in Page Code Editor\n1.  If you aren't already, sign in to your Okta org as your Super Admin acount `oktatraining`\n2.  From the Admin dashboard, click `Customizations` > `Brands`\n3.  Click on `Okta Ice` in your list of brands.\n4.  Click `Pages`\n5.  In the **Sign-in page** section, click `Configure`\n6.  Click the `Code editor` toggle button\n7.  Click `Proceed to code editor`"
+      "description": "## Access the Sign-in Page Code Editor\n1.  If you aren't already, sign in to your Okta org as your Super Admin account.\n2.  From the Admin dashboard, click `Customizations` > `Brands`\n3.  Click on `Okta Ice` in your list of brands.\n4.  Click `Pages`\n5.  In the **Sign-in page** section, click `Configure`\n6.  Click the `Code editor` toggle button\n7.  Click `Proceed to code editor`"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -22,7 +22,8 @@
           "character": 1
         }
       },
-      "description": "## The Default Sign-in Page Code\n\nThe code from the default Okta-hosted sign-in Page has been copied here so we can explore it more in depth. You can customize the Okta-hosted sign-in page, not only by modifying the code in the Sign-in Page Code Editor, but by configuring settings in Okta's Branding UI. Your Okta org must have Branding enabled to use Okta's Branding UI."
+      "description": "## Explore the default Sign-in Page code\n\nThe code from the default Okta-hosted sign-in Page has been copied here so we can explore it more in depth. You can customize the Okta-hosted sign-in page, not only by modifying the code in the Sign-in Page Code Editor, but by configuring settings in Okta's Branding UI. Your Okta org must have Branding enabled to use Okta's Branding UI.",
+      "title": "Explore the default Sign-in Page code"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -36,8 +37,8 @@
           "character": 36
         }
       },
-      "description": "## Examine the Sign-in Page Mustache Variables\n\nThroughout the default Sign-in Page code, you will see variables surrounded by curly braces `{{}}` such as the one highlighted here. This is because the Okta Sign In Page template uses the Mustache templating language in its HTML. These variables reference relevant values for the Sign In Page to load such as the favicon URL. ",
-      "title": "Sign-in Page Code Mustache Variables"
+      "description": "## Examine the Sign-in Page Mustache variables\n\nThroughout the default Sign-in Page code, you will see variables surrounded by curly braces `{{}}` such as the one highlighted here. This is because the Okta Sign In Page template uses the Mustache templating language in its HTML. These variables reference relevant values for the Sign In Page to load such as the favicon URL. ",
+      "title": "Sign-in Page Code Mustache variables"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -185,30 +186,30 @@
       "description": "## Access the Okta Branding UI\nBefore we make any changes to the default Sign-in Page code, let's see what we can customize the SIW without touching any code at all. We'll do this with Okta's Branding UI.\n\n1. Navigate to `Customizations` > `Brands`\n2. Select `Okta Ice` from your list of brands.\n\nUnder the `Theme` section, you can define:\n\n- Primary and Secondary colors\n- Logo\n- Favicon\n- Background"
     },
     {
-      "title": "Customize the Primary and Secondary Colors",
-      "description": "## Customize the Primary and Secondary Colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#2d75bb`\n\nChange the Secondary color to `#c7e5f5`"
+      "title": "Customize the primary and secondary colors",
+      "description": "## Customize the primary and secondary colors\n\nIn the default Sign-in Page code, the primary color is applied to the `Sign In` button and the secondary color is applied to the background color of the Sign-in page.\n\nChange the Primary color to `#2d75bb`\n\nChange the Secondary color to `#c7e5f5`"
     },
     {
-      "title": "Customize the Logo",
-      "description": "## Customize the Logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Click the pencil icon next to the `Logo` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-logo.png`\n\n![Our Custom Logo](./img/ice-logo.png)"
+      "title": "Customize the logo",
+      "description": "## Customize the logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/ice-logo.png\n1. Click the pencil icon next to the `Logo` item.\n2. Select `Upload new image`.\n3. Select `ice-logo.png`.\n\n![Our Custom Logo](./img/ice-logo.png)"
     },
     {
-      "title": "Customize the Favicon",
-      "description": "## Customize the Favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Click the pencil icon next to the `Favicon` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\favicon.png`\n\n![Our Custom Logo](./img/favicon.png)"
+      "title": "Customize the favicon",
+      "description": "## Customize the favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/favicon.png\n1. Click the pencil icon next to the `Favicon` item.\n2. Select `Upload new image`.\n3. Select `favicon.png`.\n\n![Our Custom Logo](./img/favicon.png)"
     },
     {
-      "title": "Customize the Background Image",
-      "description": "## Customize the Background Image\n\nNext, we're going to upload a custom background image. \n\n\n1. Click the pencil icon next to the `Background` item\n2. Select `Upload new image`\n3. Open `C:\\ClassFiles\\02-customizing-okta-hosted-siw\\img\\ice-cream-bg.png` and, finally, click `Save Changes`\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\n"
+      "title": "Customize the background image",
+      "description": "## Customize the background image\n\nNext, we're going to upload a custom background image. \n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/ice-cream-bg.png\n1. Click the pencil icon next to the `Background` item.\n2. Select `Upload new image`.\n3. Select `ice-cream-bg.png` and, finally, click `Save Changes`.\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\n"
     },
     {
-      "title": "Apply the Theme to the Sign-in Page",
-      "description": "## Apply the Theme to the Sign-in Page\n\nNow that we have customized our theme, we need to apply it to our Sign-in page.\n\n1. Click `Pages`\n2. In the **Sign-in Page** section, click `Configure`\n3. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n4. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n5. Click `Save and Publish` (Note: The `Save and Publish` button will be greyed out if **Image background** was already set by default. In this case, it is safe to proceed to the next step)"
+      "title": "Apply the theme to the Sign-in Page",
+      "description": "## Apply the theme to the Sign-in Page\n\nNow that we have customized our theme, we need to apply it to our Sign-in page.\n\n1. Click `Pages`\n2. In the **Sign-in Page** section, click `Configure`\n3. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n4. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n5. Click `Save and Publish` (Note: The `Save and Publish` button will be greyed out if **Image background** was already set by default. In this case, it is safe to proceed to the next step)"
     },
     {
       "description": "## Preview the Sign-In Page\n\nNotice that you can see a preview of the Sign-In Page to the right.\n\n1. Click the `Visit page` link near the top of the page, and a new tab will open with a live preview of your Sign-In Page.\n\n2. **Keep your Sign-In Page open for the next lab**"
     },
     {
-      "title": "Lab Checkpoint",
+      "title": "Lab checkpoint",
       "description": "## ✅  Checkpoint\nWe have seen how we could customize the SIW without touching the Sign-in Page code through Okta's Branding UI. For some use cases, this level of customization is enough! For other use cases, we might want to customize the Sign-in Page beyond what Okta's Branding UI can offer. In the next lab, we use the integrated Sign-in Page code editor to achieve this."
     }
   ]

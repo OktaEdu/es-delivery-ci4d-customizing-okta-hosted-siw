@@ -3,38 +3,48 @@
   "title": "#5 - Configure A Custom Domain",
   "steps": [
     {
-      "title": "Lab Overview",
-      "description": "# Lab 2.1 Configure a Custom Domain\n\n🎯 **Objective:**   Configure a custom domain in Okta and configure your DNS to support the custom URL. \n\n🎬 **Scenario**    Continuing with the white label experience, Okta Ice wants to change the Okta URL to its own domain. In this lab, you will configure Okta and your DNS to change the Okta URL end-users will use. \n\n⏱️ **Duration:**     20 minutes"
+      "title": "Lab overview",
+      "description": "# Configure a Custom Domain\n\n🎯 **Objective:**   Configure a custom domain in Okta and configure your DNS to support the custom URL. \n\n🎬 **Scenario**    Continuing with the white label experience, Okta Ice wants to change the Okta URL to its own domain. In this lab, you will configure Okta and your DNS to change the Okta URL end-users will use. \n\n⏱️ **Duration:**     20 minutes"
     },
     {
-      "title": "Create a New Brand",
-      "description": "### Create a New Brand\n\n1. Log in to your Okta org as `oktatraining` and click the `Admin` button to enter the Admin Dashboard.\n2. Click `Customizations` > `Brands`.\n   You'll see that you have a default Okta brand, which is limited since it only works with your default Okta subdomain. We will create a new brand so we can configure a custom subdomain.\n3. Click the `+ Create brand` button.\n4. Enter `Okta Ice` as your brand name and click `Create brand`.\n   You should now see your new **Okta Ice** brand in your list of brands."
+      "title": "Create a new Brand",
+      "description": "### Create a new Brand\n\n1. If not already logged in, log into your Okta org as Super Admin and click the `Admin` button to enter the Admin Dashboard.\n2. Click `Customizations` > `Brands`.\n   You'll see that you have a default Okta brand, which is limited since it only works with your default Okta subdomain. We will create a new brand so we can configure a custom subdomain.\n3. Click the `+ Create brand` button.\n4. Enter `Okta Ice` as your brand name and click `Create brand`.\n   You should now see your new **Okta Ice** brand in your list of brands."
     },
     {
-      "title": "Configure a Subdomain",
-      "description": "### Configure a Subdomain\n\n1. Click `Okta Ice` from your list of brands.\n2. Click `Add domain`\n3. To prepare for the next step, expand the **Credentials** panel in your VM.\n\n![Start Code Tour](./.tour-resources/1-1_expand_sidebar.gif)"
+      "title": "Configure a subdomain",
+      "description": "### Configure a subdomain\n\n1. Click `Okta Ice` from your list of brands.\n2. Click `Add domain`\n"
     },
     {
-      "description": "## Fill Out Your Fully-Qualified Domain \n\nThe fully-qualified domain you will use for this step consists of a **subdomain** and a **domain** in the format `oktaice########.coffee-ice.com`\n\n1. In the **Add domain** form on Okta, click into the `Domain` field. \n\n2.  In the **Credentials** panel in your VM, click the ![paste from VM](./.tour-resources/copy.png) icon next to `Subdomain` to paste your subdomain into this field.\n\n3.  Click back into the `Domain` field in the **Add domain** form.\n\n4.  Append `.coffee-ice.com` after your subdomain. It should now look something like `oktaice########.coffee-ice.com`\n\n5.  Under **Certificate management**, ensure `Okta-managed` is selected.\n\n6.  Click `Next`.\n\nOkta will now provide you with a `TXT` value and a `CNAME` value, which we will use in the next step to verify that we own this domain.\n![Getting values from Okta to set up the custom domain](./.tour-resources/custom-domain.gif)\n"
+      "description": "## Fill out Your fully-qualified domain\nThe fully-qualified domain you will use for this step consists of a **subdomain** and a **domain** in the format `dev-########.coffee-ice.com`\n\n1. In the **Add domain** form on Okta, click into the `Domain` field. \n\n2.  Type in the subdomain of your Okta org, which is of the form `dev--########`. You can find this in your Admin Dashboard, at the top right under your username.\n\n3.  Click back into the `Domain` field in the **Add domain** form.\n\n4.  Append `.coffee-ice.com` after your subdomain. It should now look something like `dev-########.coffee-ice.com`\n\n5.  Under **Certificate management**, ensure `Okta-managed` is selected.\n\n6.  Click `Next`.\n\nOkta will now provide you with a `TXT` value and a `CNAME` value, which we will use in the next step to verify that we own this domain.\n![Getting values from Okta to set up the custom domain](./.tour-resources/custom-domain.gif)\n"
     },
     {
-      "title": "Log In to the DNS Configuration Tool",
-      "description": "## Log In to the DNS Configuration Tool\nIn a new tab, navigate to our DNS configuration tool at [https://oktaice.store/dns/](https://oktaice.store/dns/) and log in with the following information (replacing ######## with your assigned subdomain number from the **Credentials** panel in your VM)\n\n| Field Name | Value |\n|-----------|--------:|\n| Subdomain | `oktaice########` |\n| Domain | `coffee-ice.com` |\n| Username | `oktatraining` |\n| Password | `Tra!nme4321` |\n\n\nWhen you log in, verify that you have logged in to modify the DNS entries for the correct subdomain and domain. \n\nThere should not be any entries. If there are, delete them.\n\n![Logging in to the DNS tool](./.tour-resources/dns-tool.gif)\n\n"
+      "title": "Log into the DNS Configuration Tool",
+      "description": "## Log into the DNS Configuration Tool\nIn a new tab, navigate to our DNS configuration tool at [https://oktaice.store/dns/](https://oktaice.store/dns/) and log in with the following information (replacing ######## with your assigned subdomain number from the **Credentials** panel in your VM)\n\n| Field Name | Value |\n|-----------|--------:|\n| Subdomain | `dev-######## |\n| Domain | `coffee-ice.com` |\n| Username | `oktatraining` |\n| Password | `Tra!nme4321` |\n\n\nWhen you log in, verify that you have logged in to modify the DNS entries for the correct subdomain and domain. \n\nThere should not be any entries. If there are, delete them.\n\n![Logging in to the DNS tool](./.tour-resources/dns-tool.gif)\n\n"
     },
     {
-      "title": "Add the TXT Entry",
-      "description": "1.  Click `Add Entry`\n\n2.  In the `Type` section, choose `TXT`\n\n3.  Switch back to your Okta tab\n\n4.  Copy the **Host** entry next to in the **TXT** row (e.g.,`_acme-challenge.oktaice########.coffee-ice.com`)\n\n5.  Switch back to the DNS configuration tool\n\n6.  Paste this text into the `Host` field\n\n7.  Switch back to your Okta tab\n\n8.  Copy the **Value** entry in the **TXT** row (a unique value generated by Okta)\n\n9.  Switch back to the DNS configuration tool\n\n10.  Paste this text into the `Value` field\n\n11. Click `Add`\n\n![Adding the TXT contents](./.tour-resources/add-txt.gif)"
+      "title": "Add the TXT entry",
+      "description": "## Add the TXT entry\n\n1.  Click `Add Entry`\n\n2.  In the `Type` section, choose `TXT`\n\n3.  Switch back to your Okta tab\n\n4.  Copy the **Host** entry next to in the **TXT** row (e.g.,`_acme-challenge.dev-########.coffee-ice.com`)\n\n5.  Switch back to the DNS configuration tool\n\n6.  Paste this text into the `Host` field\n\n7.  Switch back to your Okta tab\n\n8.  Copy the **Value** entry in the **TXT** row (a unique value generated by Okta)\n\n9.  Switch back to the DNS configuration tool\n\n10.  Paste this text into the `Value` field\n\n11. Click `Add`\n\n![Adding the TXT contents](./.tour-resources/add-txt.gif)"
     },
     {
-      "title": "Add the CNAME Entry",
-      "description": "## Add the CNAME Entry\n\n1.  In the `Type` section, choose `CNAME`\n2.  Switch back to your Okta tab\n3. Copy the **Host** entry in the **CNAME** row (e.g., `oktaice########.coffee-ice.com`)\n4. Switch back to the DNS configuration tool\n5. Paste this text into the `Host` field\n6. Switch back to your Okta tab\n7. Copy the **Value** entry in the **CNAME** row (Your Okta org URL)\n8. Switch back to the DNS configuration tool\n9. Paste this text into the `Value` field\n10. Click `Add`\n11. Click `Cancel`\n12. You should now see the two entries you added\n13.  You can now log out of the DNS configuration tool and close the tab\n\n![Adding the NAME contents](./.tour-resources/add-name.gif)"
+      "title": "Add the CNAME entry",
+      "description": "## Add the CNAME entry\n\n1.  In the `Type` section, choose `CNAME`\n2.  Switch back to your Okta tab\n3. Copy the **Host** entry in the **CNAME** row (e.g., `dev-########.coffee-ice.com`)\n4. Switch back to the DNS configuration tool\n5. Paste this text into the `Host` field\n6. Switch back to your Okta tab\n7. Copy the **Value** entry in the **CNAME** row (Your Okta org URL)\n8. Switch back to the DNS configuration tool\n9. Paste this text into the `Value` field\n10. Click `Add`\n11. Click `Cancel`\n12. You should now see the two entries you added\n13.  You can now log out of the DNS configuration tool and close the tab\n\n![Adding the NAME contents](./.tour-resources/add-name.gif)"
     },
     {
-      "title": "Issue an Okta-Managed Certificate",
-      "description": "## Issue an Okta-Managed Certificate\n\nNavigate back to the Okta tab and click `Next`. Okta will take a moment to verify the DNS 01 challenge:\n\n- If verification fails, go back and check that you entered both the TXT and CNAME records correctly\n\n- If verification is successful, Okta will issue a TLS certificate for your custom domain. Click `Finish`.\n\nYou will see a status of **Pending** for your custom domain as it can take several minutes to half an hour for the domain to become ready."
+      "title": "Issue an Okta-managed certificate",
+      "description": "## Issue an Okta-managed certificate\n\nNavigate back to the Okta tab and click `Next`. Okta will take a moment to verify the DNS 01 challenge:\n\n- If verification fails, go back and check that you entered both the TXT and CNAME records correctly\n\n- If verification is successful, Okta will issue a TLS certificate for your custom domain. Click `Finish`.\n\nYou will see a status of **Pending** for your custom domain as it can take several minutes to half an hour for the domain to become ready.",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 4
+        },
+        "end": {
+          "line": 1,
+          "character": 37
+        }
+      }
     },
     {
-      "title": "Lab Checkpoint",
+      "title": "Lab checkpoint",
       "description": "## ✅ Checkpoint\n\nAt this point, you have configured a custom domain for your Okta org. Setting up a custom domain also allows you to customize the Okta-hosted SIW.\n"
     }
   ],
