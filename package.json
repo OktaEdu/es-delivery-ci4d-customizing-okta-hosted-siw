@@ -1,6 +1,45 @@
 {
+  "name": "lab-deploy-redirect",
+  "version": "1.0",
+  "description": "An Okta training lab.",
+  "license": "MIT",
+  "author": "Okta",
+  "bugs": {
+    "url": "https://github.com/OktaEdu/es-delivery-ci4d-customizing-okta-hosted-siw/issues"
+  },
+  "homepage": "https://github.com/OktaEdu/es-delivery-ci4d-customizing-okta-hosted-siw/blob/ondemand/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OktaEdu/es-delivery-ci4d-customizing-okta-hosted-siw.git"
+  },
+  "scripts": {
+    "init": "concurrently \"npm:init:dependencies\""
+  },
+  "keywords": [
+    "okta",
+    "oauth2",
+    "openid",
+    "oidc",
+    "auth",
+    "authentication",
+    "samples",
+    "labs"
+  ],
   "dependencies": {
-    "eslint": "^8.22.0",
+    "concurrently": "^7.3.0",
+    "eslint": "^8.20.0",
     "prettier": "^2.7.1"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "endOfLine": "auto",
+    "quoteProps": "consistent",
+    "semi": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
   }
 }
