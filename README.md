@@ -1,5 +1,3 @@
-#### Disclaimer: The following is intended for educational purposes only. Not meant for production.
-
 # Lab: Deploy Redirect Authentication with the Okta-Hosted Sign In Widget
 
 In this [Okta Training](https://www.okta.com/training/) hands-on lab, you will integrate a web application with Okta and deploy the redirect model of authentication. After this, you will customize the Okta Sign-In Widget (SIW) using the Branding UI and the Sign-In Page Code Editor.
@@ -24,4 +22,5 @@ In this [Okta Training](https://www.okta.com/training/) hands-on lab, you will i
 
 ---
 
+#### Disclaimer: The following is intended for educational purposes only. Not meant for production.
 
