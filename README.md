@@ -1,8 +1,6 @@
-[![Okta Training](./.tour-resources/oktaeduservices.png "Okta Education Services")](https://www.okta.com/services/training/)
-
 #### Disclaimer: The following is intended for educational purposes only. Not meant for production.
 
-# Customize the Sign-In Page with the Okta-Hosted Sign-In Widget (Redirect Model)
+# Lab: Deploy Redirect Authentication with the Okta-Hosted Sign In Widget
 
 This repo contains everything you need to complete the labs in this module.
 
@@ -17,4 +15,4 @@ These labs are guided by a VSCode plugin called CodeTour. To start Lab 2.1, firs
 
 ![Start Code Tour](./.tour-resources/start-tour.gif)
 
-Follow the tour steps until you reach the Checkpoint, proceeding to the next lab only when instructed.
+
