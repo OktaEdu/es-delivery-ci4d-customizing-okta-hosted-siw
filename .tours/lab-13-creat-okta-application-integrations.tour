@@ -1,0 +1,80 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#4 - Lab 1.4 Create Okta Application Integrations",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 1.4: Create Okta Application Integrations\n 🎯 **Objective**    Create Okta application integrations for two existing applications. Assign one application to the Customers group and assign one application to the Franchisee group.\n \n  🎬 **Scenario**     Customers and Franchisees require access to a different set of applications.\n\n  ⏱️ **Duration**    15 minutes\n"
+    },
+    {
+      "description": "## Enable Cross-Origin Resource Sharing (CORS)\n\nIn Okta, **CORS** allows JavaScript hosted on your website to make a request using an\n`XMLHttpRequest` to the Okta API. While we aren't hosting the Okta Sign-In Widget when we use the Redirect Model, our sample applications ***do*** call out to Okta's API to close an Okta session and log a user out. Every website origin must be explicitly permitted as a **Trusted Origin** in your Okta org. \n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, navigate to `Security` > `API`\n\n3. Click on the `Trusted Origins`  tab.\n\n4. Click the `Add Origin` button\n\n5. Enter `Okta Ice Portal` into the **Origin name** field.\n\n6. Enter `http://localhost:8080` into the **Origin URL** field.\n\n7. Under **Choose Type**, select `Cross-Origin Resource Sharing (CORS)` \n\n6. Click `Save`"
+    },
+    {
+      "title": "Navigate to Applications",
+      "description": "## Navigate to Applications\n\nIn the Admin menu, navigate to `Applications` > `Applications`"
+    },
+    {
+      "title": "Create an Application Integration for the Rewards App",
+      "description": "## Create an Application Integration for the Rewards App\n\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Click `Next`\n\n5. Enter `Customer Rewards` as the Application integration name\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/rewards.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Customers`\n\n9. Click `Save`"
+    },
+    {
+      "file": "redirect/rewards.html",
+      "description": "## Configure the Rewards Application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Here in VSCode, notice that `rewards.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`V` to paste your `Client ID` value so that it is enclosed in the double quotes.",
+      "line": 18,
+      "title": "Configure the Rewards Application `appClientId`",
+      "selection": {
+        "start": {
+          "line": 18,
+          "character": 26
+        },
+        "end": {
+          "line": 18,
+          "character": 49
+        }
+      }
+    },
+    {
+      "file": "redirect/rewards.html",
+      "description": "## Configure the Rewards Application `baseOktaURL`\n\n1. Notice that `rewards.html` is still open, but now the line containg the the `baseOktaURL` variable is highlighted. It contains the placeholder value `https://oktaice########.oktapreview.com`\n\n3. Highlight the placeholder value **excluding** the quotation marks. Ensure your cursor is now between the quotation marks.\n\n4. Open your VM's **Credentials** panel by clicking on the arrow to the right hand side of the VM screen.\n\n5. In your VM's **Credentials** panel, click the  ![copy](./.tour-resources/copy.png) icon in the `Link` section. This will automatically paste your Okta org URL into `rewards.html` where your cursor was placed. Ensure it was pasted in the correct location and that the URL is enclosed in double quotes.\n\n6. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
+      "line": 17
+    },
+    {
+      "title": "Create an Application Integration for the CRM App",
+      "description": "## Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Back in Okta, click `Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
+    },
+    {
+      "file": "redirect/crm.html",
+      "description": "## Configure the CRM Application `appClientId`\n\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Here in VSCode, notice that `crm.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`V` to paste your `Client ID` value so that it is enclosed in the double quotes.\n",
+      "line": 18
+    },
+    {
+      "file": "redirect/crm.html",
+      "description": "## Configure the CRM Application `baseOktaURL`\n\n1. Notice that `crm.html` is still open, but now the line containg the the `baseOktaURL` variable is highlighted. It contains the placeholder value `https://oktaice########.oktapreview.com`\n\n3. Highlight the placeholder value **excluding** the quotation marks. Ensure your cursor is now between the quotation marks.\n\n4. Open your VM's **Credentials** panel by clicking on the arrow to the right hand side of the VM screen.\n\n5. In your VM's **Credentials** panel, click the  ![copy](./.tour-resources/copy.png) icon in the `Link` section. This will automatically paste your Okta org URL into `crm.html` where your cursor was placed. Ensure it was pasted in the correct location and that the URL is enclosed in double quotes.\n\n6. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.\n\n7. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.",
+      "line": 17
+    },
+    {
+      "title": "Start the Web Server",
+      "description": "## Start the Web Server\n\n1. [Click here to toggle open the Integrated terminal](command:workbench.action.terminal.toggleTerminal) here in VSCode.\n\n2. Notice that the terminal automatically opens to the project directory.\n\n3. You can start a web server on port 8080 by issuing the following command in this terminal:\n\n ```bash\n python -m http.server 8080\n ```\n\nIf you don't want to type this in manually, you can alternatively [click here](command:codetour.sendTextToTerminal?[\" python -m http.server 8080\"]) to issue the command automatically.\n\nOnce the web server has started successfully, you will see the following message printed to the terminal: \n\n`Serving HTTP on :: port 8080 (http://[::]:8080/) ...`"
+    },
+    {
+      "title": "Test the Rewards App",
+      "description": "## Test out the Rewards App\n\nBefore following the directions below, that ensure you are **logged out** of any Okta sessions. **DO NOT use an Incognito browser window** for the steps that follow.\n\n1. In Chrome, visit http://localhost:8080 \n\n2. Click the `Rewards App (Redirect)` link. You should be redirected to Okta to sign in.\n\n3. Log in as `soraya.esfeh@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the Rewards app and you should see some information printed to the page that we will discuss later. For now you can see Soraya's email address at the top as well as your app's Client ID at the bottom.\n"
+    },
+    {
+      "title": "Try to Access the CRM App",
+      "description": "## Try to Access the CRM App\n\n1. Still logged in as Soraya, click `Return to Portal`\n\n2. Click on `CRM App (Redirect)`\n\n3. The CRM application does not load because Soraya is not authorized to access this application. The CRM app is only assigned to users in the `Franchisees` group and she is not a member of that group.\n\n4. Click the `Close Okta Session` button.\n\n5. Click `Return to Portal`"
+    },
+    {
+      "title": "Log in as a Franchisee Partner",
+      "description": "## Log in as a Franchisee Partner\n\nNow we're going to log in as Kay West, who is a member of the Franchisees group.\n\n1. Click on `Rewards App (Redirect)`\n\n2. Enter `kay.west@oktaice.com` as the login and click `Next`\n\n3. Notice that this user did not have an existing session with Okta before trying to access an application that is not assigned to them. In this case, we are not even prompted for a password to authenticate and we are told that the application is not assigned to the user. The user still does not have a session.\n\n4. Click `Return to Portal`\n\n5. Click on `CRM App (Redirect)` \n\n6. Log in as `kay.west@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the CRM app and you should see see Kay's email address at the top as well as your app's Client ID at the bottom. \n"
+    },
+    {
+      "title": "Close the Okta Session and Shut Down the Web Server",
+      "description": "## End Your Okta Session and Shut Down the Web Server\n\n1. Click the `Close Okta Session` button.\n\n2. Your web server will stop once you close this VS Code workspace at the after the lab checkpoint."
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": "## ✅ Checkpoint\n\nYou now know how to set up an application integration in Okta.\n\n## 🎉 End of Module 1 Labs\n**You may close this workspace project, ensuring all changes were saved.**"
+    }
+  ]
+}
