@@ -11,7 +11,17 @@
     },
     {
       "title": "Create an Application Integration for the Rewards app",
-      "description": "## Create an Application Integration for the Rewards app\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. In the Admin menu, navigate to `Applications` > `Applications`\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Click `Next`\n\n5. Enter `Customer Rewards` as the Application integration name\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/rewards.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Customers`\n\n9. Click `Save`"
+      "description": "## Create an Application Integration for the Rewards app\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. In the Admin menu, navigate to `Applications` > `Applications`\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Click `Next`\n\n5. Enter `Customer Rewards` as the Application integration name\n\n6. In the **Sign-in redirect URIs** field, enter the value that prints out to the terminal when you click [here](command:codetour.sendTextToTerminal?[\"echo https://$CODESPACE_NAME-8080.app.github.dev/redirect/rewards.html\"]).\n\n7. In the **Sign-out redirect URIs** field, enter the value that prints out to the terminal when you click [here](command:codetour.sendTextToTerminal?[\"echo https://$CODESPACE_NAME-8080.app.github.dev\"]).\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Customers`\n\n9. Click `Save`",
+      "selection": {
+        "start": {
+          "line": 16,
+          "character": 152
+        },
+        "end": {
+          "line": 16,
+          "character": 222
+        }
+      }
     },
     {
       "file": "redirect/rewards.html",
@@ -47,7 +57,17 @@
     },
     {
       "title": "Create an Application Integration for the CRM app",
-      "description": "## Create an Application Integration for the CRM app\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Back in Okta, click `Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
+      "description": "## Create an Application Integration for the CRM app\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Back in Okta, click `Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7.  In the **Sign-in redirect URIs** field, enter the value that prints out to the terminal when you click [here](command:codetour.sendTextToTerminal?[\"echo https://$CODESPACE_NAME-8080.app.github.dev/redirect/crm.html\"]).\n\n7. In the **Sign-out redirect URIs** field, enter the value that prints out to the terminal when you click [here](command:codetour.sendTextToTerminal?[\"echo https://$CODESPACE_NAME-8080.app.github.dev\"]).\n\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`",
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 1
+        },
+        "end": {
+          "line": 20,
+          "character": 1
+        }
+      }
     },
     {
       "file": "redirect/crm.html",

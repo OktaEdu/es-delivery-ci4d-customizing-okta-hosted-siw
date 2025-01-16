@@ -8,15 +8,15 @@
     },
     {
       "title": "Create a Franchisee group",
-      "description": "## Create a Franchisee group\n1.  Ensure you are logged in as your Okta Super Admin account and that you are on the `Admin` dashboard.\n\n2.  Navigate to `Directory > Groups`\n\n3.  Select `Add Group`\n\n4.  In the `Name` field, enter `Franchisees`\n\n5. In the `Description` field, enter `All Franchisees`\n\n6. Click `Save`\n"
+      "description": "## Create a Franchisee group\n1.  Ensure you are logged in as your Okta Super Admin account and that you are on the `Admin` dashboard.\n\n2.  Navigate to `Directory > Groups`\n\n3.  Select `Add Group`\n\n4.  In the `Name` field, enter `Franchisees`\n\n5. In the `Description` field, enter `All Franchisees`\n\n6. Select `Save`\n"
     },
     {
       "title": "Create a Customer group",
-      "description": "## Create a Customer group\n\n1.  Click `Add Group` again.\n\n2.  This time, enter `Customers` in the `Name` field and `All Customers` in the `Description` field.\n\n3. Click `Save`\n"
+      "description": "## Create a Customer group\n\n1.  Select `Add Group` again.\n\n2.  This time, enter `Customers` in the `Name` field and `All Customers` in the `Description` field.\n\n3. Select `Save`\n"
     },
     {
       "title": "Create a Group Rule for the Customer group",
-      "description": "## Create a Group Rule for the Customer group\n\nNow we will create a rule so that any user created that has the `userType` `customer` will automatically be added to the Customer group. This will be helpful when we import existing users with the Users API in Module 6. \n\n1. On the top of the **Groups** page, select the `Rules` tab.\n2. Select **Add Rule**\n3. Name the rule `Add customer userType to Customers Group`\n4. Set the **IF** section to read: IF `User attribute` `userType | string` `Equals` `customer`\n5. In the **THEN Assign to** section, type and select the `Customers` group.\n\n6. Click `Save`",
+      "description": "## Create a Group Rule for the Customer group\n\nNow we will create a rule so that any user created that has the `userType` `customer` will automatically be added to the Customer group. This will be helpful when we import existing users with the Users API in Module 6. \n\n1. On the top of the **Groups** page, select the `Rules` tab.\n2. Select **Add Rule**\n3. Name the rule `Add customer userType to Customers Group`\n4. Set the **IF** section to read: IF `User attribute` `userType | string` `Equals` `customer`\n5. In the **THEN Assign to** section, type and select the `Customers` group.\n\n6. Select `Save`",
       "selection": {
         "start": {
           "line": 1,
