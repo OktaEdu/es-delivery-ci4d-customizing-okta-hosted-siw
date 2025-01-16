@@ -21,14 +21,8 @@
         window.location.protocol +
         '//' +
         window.location.hostname +
-        ':' +
         window.location.port +
         window.location.pathname;
-
-      if (process.env.CODESPACES) {
-        redirectURL =
-          window.location.protocol + '//' + window.location.pathname;
-      }
 
       // Bootstrap the AuthJS Client
       const authClient = new OktaAuth({
