@@ -15,7 +15,7 @@
     },
     {
       "file": "redirect/rewards.html",
-      "description": "## Configure the Rewards application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Here in VSCode, notice that `rewards.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and paste your `Client ID` value so that it is enclosed in the double quotes.",
+      "description": "## Configure the Rewards application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Here in VSCode, notice that `rewards.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and paste your `Client ID` value so that it is enclosed in the quotes.",
       "line": 18,
       "title": "Configure the Rewards application appClientId",
       "selection": {
@@ -73,7 +73,7 @@
     },
     {
       "title": "Start the web server",
-      "description": "## Start the web server\n\n1. [Click here to toggle open the Integrated terminal](command:workbench.action.terminal.toggleTerminal) here in VSCode.\n\n2. Notice that the terminal automatically opens to the project directory.\n\n3. You can start a web server on port 8080 by issuing the following command in this terminal:\n\n ```bash\n python -m http.server 8080\n ```\n\nIf you don't want to type this in manually, you can alternatively [click here](command:codetour.sendTextToTerminal?[\" python -m http.server 8080\"]) to issue the command automatically.\n\nOnce the web server has started successfully, you will see the following message printed to the terminal: \n\n`Serving HTTP on :: port 8080 (http://[::]:8080/) ...`",
+      "description": "## Start the web server\n\n1. [Click here to toggle open the Integrated terminal](command:workbench.action.terminal.toggleTerminal) here in VSCode.\n\n2. Notice that the terminal automatically opens to the project directory.\n\n3. You can start a web server on port 8080 by issuing the following command in this terminal:\n\n ```bash\n python3 -m http.server 8080\n ```\n\nIf you don't want to type this in manually, you can alternatively [click here](command:codetour.sendTextToTerminal?[\" python3 -m http.server 8080\"]) to issue the command automatically.\n\nOnce the web server has started successfully, you will see the following message printed to the terminal: \n\n`Serving HTTP on :: port 8080 (http://[::]:8080/) ...`\n\n4.  Select **Make public** in the window that pops up at the bottom right of your environment.",
       "selection": {
         "start": {
           "line": 1,
@@ -87,7 +87,7 @@
     },
     {
       "title": "Test the Rewards app",
-      "description": "## Test out the Rewards app\n\nBefore following the directions below, that ensure you are **logged out** of any Okta sessions. **DO NOT use an Incognito browser window** for the steps that follow.\n\n1. In Chrome, visit http://localhost:8080 \n\n2. Click the `Rewards App (Redirect)` link. You should be redirected to Okta to sign in.\n\n3. Log in as `soraya.esfeh@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the Rewards app and you should see some information printed to the page that we will discuss later. For now you can see Soraya's email address at the top as well as your app's Client ID at the bottom.\n"
+      "description": "## Test out the Rewards app\n\nBefore following the directions below, that ensure you are **logged out** of any Okta sessions. **DO NOT use an Incognito browser window** for the steps that follow.\n\n1. In this environement, select the **PORTS** tab. \n\n2. Hover over the **Forwarded Address** column and select the globe icon. This will launch your web app in a new browser tab.\n\n2. Click the `Rewards App (Redirect)` link. You should be redirected to Okta to sign in.\n\n3. Log in as `soraya.esfeh@oktaice.com`.\n\nYou should be redirected back to the Rewards app and you should see some information printed to the page that we will discuss later. For now you can see Soraya's email address at the top as well as your app's Client ID at the bottom.\n"
     },
     {
       "title": "Try to access the CRM app",
