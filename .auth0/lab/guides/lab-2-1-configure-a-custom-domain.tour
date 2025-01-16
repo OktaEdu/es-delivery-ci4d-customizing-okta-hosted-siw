@@ -19,7 +19,7 @@
     },
     {
       "title": "Log into the DNS Configuration Tool",
-      "description": "## Log into the DNS Configuration Tool\nIn a new tab, navigate to our DNS configuration tool at [https://oktaice.store/dns/](https://oktaice.store/dns/) and log in with the following information (replacing ######## with your assigned subdomain number from the **Credentials** panel in your VM)\n\n| Field Name | Value |\n|-----------|--------:|\n| Subdomain | `dev-######## |\n| Domain | `coffee-ice.com` |\n| Username | `oktatraining` |\n| Password | `Tra!nme4321` |\n\n\nWhen you log in, verify that you have logged in to modify the DNS entries for the correct subdomain and domain. \n\nThere should not be any entries. If there are, delete them.\n\n![Logging in to the DNS tool](./.tour-resources/dns-tool.gif)\n\n"
+      "description": "## Log into the DNS Configuration Tool\nIn a new tab, navigate to our DNS configuration tool at [https://oktaice.store/dns/](https://oktaice.store/dns/) and log in with the following information (replacing ######## with your assigned subdomain number from the **Credentials** panel in your VM)\n\n| Field Name | Value |\n|-----------|--------:|\n| Subdomain | `dev-########` |\n| Domain | `coffee-ice.com` |\n| Username | `oktatraining` |\n| Password | `Tra!nme4321` |\n\n\nWhen you log in, verify that you have logged in to modify the DNS entries for the correct subdomain and domain. \n\nThere should not be any entries. If there are, delete them.\n\n![Logging in to the DNS tool](./.tour-resources/dns-tool.gif)\n\n"
     },
     {
       "title": "Add the TXT entry",
