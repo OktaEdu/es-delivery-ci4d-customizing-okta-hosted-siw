@@ -8,7 +8,7 @@
     },
     {
       "title": "Access the Sign-in Page Code Editor",
-      "description": "## Access the Sign-in Page Code Editor\n1.  If you aren't already, sign in to your Okta org as your Super Admin account.\n2.  From the Admin dashboard, click `Customizations` > `Brands`\n3.  Click on `Okta Ice` in your list of brands.\n4.  Click `Pages`\n5.  In the **Sign-in page** section, click `Configure`\n6.  Click the `Code editor` toggle button\n7.  Click `Proceed to code editor`"
+      "description": "## Access the Sign-in Page Code Editor\n1.  If you aren't already, sign in to your Okta org as your Super Admin account.\n2.  From the Admin dashboard, select `Customizations` > `Brands`\n3.  Select on `Okta Ice` in your list of brands.\n4.  Select `Pages`\n5.  In the **Sign-in page** section, select `Configure`\n6.  Select the `Code editor` toggle button\n7.  Select `Proceed to code editor`"
     },
     {
       "file": "default-okta-sign-in-page.html",
@@ -191,22 +191,22 @@
     },
     {
       "title": "Customize the logo",
-      "description": "## Customize the logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/ice-logo.png\n1. Click the pencil icon next to the `Logo` item.\n2. Select `Upload new image`.\n3. Select `ice-logo.png`.\n\n![Our Custom Logo](./img/ice-logo.png)"
+      "description": "## Customize the logo\n\nNext, we're going to upload a custom logo to be displayed at the top of the SIW. \n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/ice-logo.png\n1. Select the pencil icon next to the `Logo` item.\n2. Select `Upload new image`.\n3. Select `ice-logo.png`.\n\n![Our Custom Logo](./img/ice-logo.png)"
     },
     {
       "title": "Customize the favicon",
-      "description": "## Customize the favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/favicon.png\n1. Click the pencil icon next to the `Favicon` item.\n2. Select `Upload new image`.\n3. Select `favicon.png`.\n\n![Our Custom Logo](./img/favicon.png)"
+      "description": "## Customize the favicon\n\nNext, we're going to upload a custom favicon.\n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/favicon.png\n1. Select the pencil icon next to the `Favicon` item.\n2. Select `Upload new image`.\n3. Select `favicon.png`.\n\n![Our Custom Logo](./img/favicon.png)"
     },
     {
       "title": "Customize the background image",
-      "description": "## Customize the background image\n\nNext, we're going to upload a custom background image. \n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/ice-cream-bg.png\n1. Click the pencil icon next to the `Background` item.\n2. Select `Upload new image`.\n3. Select `ice-cream-bg.png` and, finally, click `Save Changes`.\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\n"
+      "description": "## Customize the background image\n\nNext, we're going to upload a custom background image. \n\n1. Download the following image: https://cdn.auth0.com/website/okta-learning/labs/ice-cream-bg.png\n1. Select the pencil icon next to the `Background` item.\n2. Select `Upload new image`.\n3. Select `ice-cream-bg.png` and, finally, select `Save Changes`.\n\n![Our Custom Logo](./img/ice-cream-bg.png)\n\n"
     },
     {
       "title": "Apply the theme to the Sign-in Page",
-      "description": "## Apply the theme to the Sign-in Page\n\nNow that we have customized our theme, we need to apply it to our Sign-in page.\n\n1. Click `Pages`\n2. In the **Sign-in Page** section, click `Configure`\n3. Click the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n4. Click the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n5. Click `Save and Publish` (Note: The `Save and Publish` button will be greyed out if **Image background** was already set by default. In this case, it is safe to proceed to the next step)"
+      "description": "## Apply the theme to the Sign-in Page\n\nNow that we have customized our theme, we need to apply it to our Sign-in page.\n\n1. Select `Pages`\n2. In the **Sign-in Page** section, select `Configure`\n3. select the style labeled `Solid background` and observe the change in the preview panel. This style uses our custom logo, applies the primary color to the `Sign In` button, and uses the secondary color as the solid background for the page.\n4. Select the style labelled `Image background` and observe the change in the preview panel. This style is the same as the above, but it applies our image background to the page.\n5. Select `Save and Publish` (Note: The `Save and Publish` button will be greyed out if **Image background** was already set by default. In this case, it is safe to proceed to the next step)"
     },
     {
-      "description": "## Preview the Sign-In Page\n\nNotice that you can see a preview of the Sign-In Page to the right.\n\n1. Click the `Visit page` link near the top of the page, and a new tab will open with a live preview of your Sign-In Page.\n\n2. **Keep your Sign-In Page open for the next lab**"
+      "description": "## Preview the Sign-In Page\n\nNotice that you can see a preview of the Sign-In Page to the right.\n\n1. select the `Visit page` link near the top of the page, and a new tab will open with a live preview of your Sign-In Page.\n\n2. **Keep your Sign-In Page open for the next lab**"
     },
     {
       "title": "Lab checkpoint",
