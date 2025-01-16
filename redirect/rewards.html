@@ -17,18 +17,25 @@
       var baseOktaURL = 'https://{domain}.okta.com'; // 👈 update with your Okta Org URL
       var appClientID = 'XXXXXXXXXXXXXXXXXXXXXXX'; // 👈 update with your Rewards App Cliend ID
 
+      var redirectURL =
+        window.location.protocol +
+        '//' +
+        window.location.hostname +
+        ':' +
+        window.location.port +
+        window.location.pathname;
+
+      if (process.env.CODESPACES) {
+        redirectURL =
+          window.location.protocol + '//' + window.location.pathname;
+      }
+
       // Bootstrap the AuthJS Client
       const authClient = new OktaAuth({
         // Required Fields for OIDC client
         url: baseOktaURL,
         clientId: appClientID,
-        redirectUri:
-          window.location.protocol +
-          '//' +
-          window.location.hostname +
-          ':' +
-          window.location.port +
-          window.location.pathname, // full Path to this file.
+        redirectUri: redirectURL,
         issuer: baseOktaURL + '/oauth2/default',
       });
 
