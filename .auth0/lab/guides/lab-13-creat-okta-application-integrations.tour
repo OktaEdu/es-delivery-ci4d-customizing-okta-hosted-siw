@@ -136,7 +136,7 @@
       }
     },
     {
-      "title": "Close the Okta session and shut down the web server",
+      "title": "Close the Okta session",
       "description": "## Close the Okta session\n1. Select the `Close Okta Session` button.\n\n"
     },
     {
