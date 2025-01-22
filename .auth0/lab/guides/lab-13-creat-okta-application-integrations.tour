@@ -87,9 +87,17 @@
     },
     {
       "file": "redirect/crm.html",
-      "description": "## Configure the CRM application `baseOktaURL`\n\n1. Notice that `crm.html` is still open, but now the line containg the the `baseOktaURL` variable is highlighted. It contains the placeholder value `https://{domain}.okta.com`\n\n2. In your Okta Admin Dashboard, select your username in the top right hand corner and you should see your Okta org's URL.\n\n2. Hover your mouse over the URL and select **Copy to clipboard**.\n\n3. Back here in the code editor, highlight the placeholder value **excluding** the quotation marks. Ensure your cursor is now between the quotation marks. \n\n4. Paste in the value of your Okta org URL.\n\n6. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.\n\n7. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.",
+      "description": "## Configure the CRM application `baseOktaURL`\n\n1. Notice that `crm.html` is still open, but now the line containg the the `baseOktaURL` variable is highlighted. It contains the placeholder value `https://{domain}.okta.com`\n\n2. In your Okta Admin Dashboard, select your username in the top right hand corner and you should see your Okta org's URL.\n\n2. Hover your mouse over the URL and select **Copy to clipboard**.\n\n3. Back here in the code editor, highlight the placeholder value **excluding** the quotation marks. Ensure your cursor is now between the quotation marks. \n\n4. Paste in the value of your Okta org URL.\n\n6. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.\n\n",
       "line": 17,
       "title": "Configure the CRM application baseOktaUrl"
+    },
+    {
+      "title": "Configure an Authentication Policy",
+      "description": "## Configure the Authentication Policy\n\n>An Authentication Policy enforces how (with what authenticators) an end user can log in to an application. For the purpose of this lab, we'll assign our two apps the **Password only policy** so that you do not have to set up MFA for the test end-user accounts. In real-world use cases, a stronger Authentication Policy is recommended.\n\n1. Go to **Security** > **Authentication Policies**.\n2. Select **Password Only**.\n3. Select the **Apps** tab.\n4. Select the **Add app** button.\n5. Select the **Add button** for both **Customer Rewards** and **Franchise CRM**.\n6. Select **Done**."
+    },
+    {
+      "title": "Configure an Access Policy",
+      "description": "## Configure an Access Policy\n\n>An Access Policy is configured for an Okta Authorization Server to control who (or what) can gain access to resources it serves. While Access Policies are usually used for providing access control to API resources, since our app uses the OAuth 2.0 Authorization Code Flow, it requests an Access Token from the Okta Authorization Server. So, let's set up an Access Policy so the Okta Authorization Server can respond.\n\n1. Go to **Security** > **API**.\n2. Select **default**.\n3. Select the **Access Policies** tab.\n3. Select the **Add New Access Policy** button.\n3. Enter **Default Policy** for both name and description. Keep **All clients** selected.\n3. Select **Create Policy**.\n4. Select the **Add rule** button.\n5. Name this rule **Default Rule**.\n6. Keep the default selections and select **Create rule**.\n7. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.\n"
     },
     {
       "title": "Start the web server",
