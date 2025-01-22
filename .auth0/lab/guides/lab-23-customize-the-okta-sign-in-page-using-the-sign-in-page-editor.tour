@@ -129,7 +129,7 @@
     },
     {
       "title": "Lab checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, you've investigated additional customizations you can make to the Sign-In Page by using the embedded Sign-In Page Code Editor. "
+      "description": "## ✅ Checkpoint\n\nAt this point, you've investigated additional customizations you can make to the Sign-In Page by using the embedded Sign-In Page Code Editor. \n\n## 🎉 End of Lab\n\n**You may close and [stop this Codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace).**"
     }
   ]
 }
