@@ -3,7 +3,7 @@
   "title": "#7 - Customize the Okta Sign-In Page Using the Sign-In Page Code Editor",
   "steps": [
     {
-      "description": "## Customize the Okta Sign-In Page using the Sign-In Page Code Editor\n\n🎯 **Objective:**  Further customize the Sign-In Page with the Sign-In Page Code Editor.\n\n🎬 **Scenario**    Okta Ice wants to further customize the Sign-In Page beyond what is offered by the Okta Branding UI.\n\n⏱️ **Duration:**   30 minutes\n\n⚠️ **Prerequisite:** Lab 2-1 and 2-2\n\n### Note about this lab:\nIn this lab, you will be adding code to the default Okta Sign-In Page html. For the best learning experience, you are highly encouraged to type the code in manually. \n\nTo provide a differentiated experience for learners of all types, we've included an `Insert Code` link after each coding segment. This inserts the code to the correct line(s) automatically. After you insert the code, you will still have to select `Next` to advance to the next lab step.",
+      "description": "## Customize the Okta Sign-In Page using the Sign-In Page Code Editor\n\n🎯 **Objective:**  Further customize the Sign-In Page with the Sign-In Page Code Editor.\n\n🎬 **Scenario**    Okta Ice wants to further customize the Sign-In Page beyond what is offered by the Okta Branding UI.\n\n⏱️ **Duration:**   30 minutes\n\n⚠️ **Prerequisite:** Lab 2-1 and 2-2\n\n### Note about this lab:\nIn this lab, you will be adding code to the default Okta Sign-In Page html. For the best learning experience, you are highly encouraged to type the code in manually. \n\nTo provide a differentiated experience for learners of all types, we've included an `Insert Code` link after each coding segment. This inserts the code to the correct line(s) automatically. After you insert the code, you will still have to select **Next** to advance to the next lab step.",
       "title": "Lab overview",
       "selection": {
         "start": {
@@ -18,11 +18,11 @@
     },
     {
       "title": "Inspect the Sign-In Page elements",
-      "description": "## Inspect the Sign-In Page elements\n\nYou should still have the Sign-In Page preview open from the last lab. If you do not have this page open, ensure you are signed in as Super Admin and:\n\n1. Navigate to `Customizations` > `Brands`\n2. Select `Okta Ice` from your list of brands.\n3. Select `Pages`\n4. In the`Sign-in page`, select `Configure`\n5. Select `Visit page`\n\n\nOn the preview of your Sign-In Page, right click on the page and select `Inspect` and ensure that you are viewing the `Elements` tab and the `Styles` sub-tab.\n![Inspect Elements](./.tour-resources/inspect-element.gif)\n"
+      "description": "## Inspect the Sign-In Page elements\n\nYou should still have the Sign-In Page preview open from the last lab. If you do not have this page open, ensure you are signed in as Super Admin and:\n\n1. Navigate to **Customizations** > **Brands**\n2. Select **Okta Ice** from your list of brands.\n3. Select **Pages**\n4. In the**Sign-in page**, select **Configure**\n5. Select **Visit page**\n\n\nOn the preview of your Sign-In Page, right click on the page and select **Inspect** and ensure that you are viewing the **Elements** tab and the **Styles** sub-tab.\n![Inspect Elements](./.tour-resources/inspect-element.gif)\n"
     },
     {
       "title": "Inspect the Form Label element",
-      "description": "## Inspect the Form Label element\n\nOne of the elements we may want to customize, is the font color of the text in the SIW. Let's inspect the `Username` form label in the SIW by right-clicking on the element and selecting `Inspect`\n\nNotice that this updates what we see in `Elements` and `Style` and we can see that the CSS selector that defines the text color for this element is `#okta-sign-in *`\n\n\n**You can now close the preview of your Sign-in page.**\n\n![Inspect Elements](./.tour-resources/inspect-label.gif)\n",
+      "description": "## Inspect the Form Label element\n\nOne of the elements we may want to customize, is the font color of the text in the SIW. Let's inspect the **Username** form label in the SIW by right-clicking on the element and selecting **Inspect**\n\nNotice that this updates what we see in **Elements** and **Style** and we can see that the CSS selector that defines the text color for this element is `#okta-sign-in *`\n\n\n**You can now close the preview of your Sign-in page.**\n\n![Inspect Elements](./.tour-resources/inspect-label.gif)\n",
       "selection": {
         "start": {
           "line": 7,
@@ -36,7 +36,7 @@
     },
     {
       "file": "customized-sign-in-page-step4.html",
-      "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a blue hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the `Insert Code` link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #0E2D5B;\n    }\n</style>\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
+      "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a blue hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the **Insert Code** link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #0E2D5B;\n    }\n</style>\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
       "line": 24
     },
     {
@@ -51,11 +51,11 @@
           "character": 1
         }
       },
-      "description": "## Preview Font Color Change in the Sign-In Page Code Editor\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Sign-In Page configuration tab in Chrome.\n\n4. Select the `Code editor` toggle button and select `Proceed to code editor`\n\n5. Select `Edit`\n\n6. Select inside of the **Code editor** box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n7. Press `CTRL`+`V` to paste in your updated code.\n\n8. Scroll up and verify that your embedded CSS now appears in the code.\n\n9. Select `Save to draft`\n\n10. Select the `Preview` button and observe the font color change."
+      "description": "## Preview Font Color Change in the Sign-In Page Code Editor\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Sign-In Page configuration tab in Chrome.\n\n4. Select the **Code editor** toggle button and select **Proceed to code editor**\n\n5. Select **Edit**\n\n6. Select inside of the **Code editor** box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n7. Press `CTRL`+`V` to paste in your updated code.\n\n8. Scroll up and verify that your embedded CSS now appears in the code.\n\n9. Select **Save to draft**\n\n10. Select the **Preview** button and observe the font color change."
     },
     {
       "title": "Inspect the SIW Header",
-      "description": "## Inspect the SIW Form Header\n\nNotice that our font color change was not applied to the `Sign In` header on above the form in the SIW. Let's inspect the Sign-In Page code again. In your latest preview of the Sign-In Page, right click on on the `Sign-In` text and select `Inspect`\n\nWhen we do this, we see that the font color for this element is specified in the selector `#okta-sign-in.auth-container h2`\n\n\n**You can now close the preview of your Sign-in page.**\n\n![Inspect the header text above the form](./.tour-resources/inspect-header.gif)\n\n"
+      "description": "## Inspect the SIW Form Header\n\nNotice that our font color change was not applied to the **Sign In** header on above the form in the SIW. Let's inspect the Sign-In Page code again. In your latest preview of the Sign-In Page, right click on on the **Sign-In** text and select **Inspect**\n\nWhen we do this, we see that the font color for this element is specified in the selector `#okta-sign-in.auth-container h2`\n\n\n**You can now close the preview of your Sign-in page.**\n\n![Inspect the header text above the form](./.tour-resources/inspect-header.gif)\n\n"
     },
     {
       "file": "customized-sign-in-page-step7.html",
@@ -74,7 +74,7 @@
           "character": 1
         }
       },
-      "description": "## Preview Font Color Change of Form Header\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome, and select `Edit`\n\n4. Select inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Select the `Save to draft` button.\n\n8. Select the `Preview` button and observe the font color change of the header.\n\n"
+      "description": "## Preview Font Color Change of Form Header\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome, and select **Edit**\n\n4. Select inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Select the **Save to draft** button.\n\n8. Select the **Preview** button and observe the font color change of the header.\n\n"
     },
     {
       "title": "Inspect the SIW Header",
@@ -97,12 +97,12 @@
           "character": 1
         }
       },
-      "description": "## Preview the SIW Header Background Color Change\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome, and select `Edit`\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Select the `Save to draft` button.\n\n8. Select the `Preview` button and observe that the background color of the SIW header has changed.\n\n",
+      "description": "## Preview the SIW Header Background Color Change\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome, and select **Edit**\n\n4. Click inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Select the **Save to draft** button.\n\n8. Select the **Preview** button and observe that the background color of the SIW header has changed.\n\n",
       "title": "Preview the SIW Header Background Color Change"
     },
     {
       "title": "Inspect Link element",
-      "description": "## Inspect Link element\n\nLet's change the color of the `Help` so it stands out a bit more and matches our branding. In your latest preview of the Sign-In Page, right click on the `Help` link at the bottom of the SIW and select `Inspect`\n\nHere we find the relevant selectors: `#okta-sign-in.auth-container .link:link` and `#okta-sign-in.auth-container .link:visited`\n\n\n**You can now close the preview of your Sign-in page.**\n\n\n![Inspect link element](./.tour-resources/inspect-link.gif)"
+      "description": "## Inspect Link element\n\nLet's change the color of the **Help** so it stands out a bit more and matches our branding. In your latest preview of the Sign-In Page, right click on the **Help** link at the bottom of the SIW and select **Inspect**\n\nHere we find the relevant selectors: `#okta-sign-in.auth-container .link:link` and `#okta-sign-in.auth-container .link:visited`\n\n\n**You can now close the preview of your Sign-in page.**\n\n\n![Inspect link element](./.tour-resources/inspect-link.gif)"
     },
     {
       "file": "customized-sign-in-page-step12.html",
@@ -121,11 +121,11 @@
           "character": 1
         }
       },
-      "description": "## Preview the Link Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. select `Edit`\n\n5. Select inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Select `Save to Draft`\n\n7. Select the `Preview` button and observe that the color of the `Help` link in the SIW has changed to cyan.\n\n"
+      "description": "## Preview the Link Color Change\n\n\nNotice that this step has automatically opened the the HTML file for you here in VSCode.\n\n1. Click into this HTML file and press `CTRL`+`A` to select the entire contents.\n\n2. Press `CTRL`+`C` to copy the code.\n\n3. Go back to your Okta Sign-In Page Code Editor tab in Chrome.\n\n4. select **Edit**\n\n5. Select inside of the Code Editor box and press `CTRL`+`A` to highlight the entire contents and press `BACKSPACE` to delete it.\n\n5. Press `CTRL`+`V` to paste in your updated code.\n\n6. Scroll up and verify that your updated embedded CSS now appears in the code.\n\n7. Select **Save to Draft**\n\n7. Select the **Preview** button and observe that the color of the **Help** link in the SIW has changed to cyan.\n\n"
     },
     {
       "title": "Save and Publish changes",
-      "description": "## Save and publish changes\n\nFeel free to continue tinkering and finding out what else you can customize here. When you're done, confirm the custom code change by selecting the `Publish` button in the Sign-In Page Code Editor. There will be a modal dialog that pops up. Confirm the save and publish by selecting the appropriate button."
+      "description": "## Save and publish changes\n\nFeel free to continue tinkering and finding out what else you can customize here. When you're done, confirm the custom code change by selecting the **Publish** button in the Sign-In Page Code Editor. There will be a modal dialog that pops up. Confirm the save and publish by selecting the appropriate button."
     },
     {
       "title": "Lab checkpoint",
