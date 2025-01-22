@@ -93,7 +93,7 @@
     },
     {
       "title": "Configure an Authentication Policy",
-      "description": "## Configure the Authentication Policy\n\n>An Authentication Policy enforces how (with what authenticators) an end user can log in to an application. For the purpose of this lab, we'll assign our two apps the **Password only policy** so that you do not have to set up MFA for the test end-user accounts. In real-world use cases, a stronger Authentication Policy is recommended.\n\n1. Go to **Security** > **Authentication Policies**.\n2. Select **Password Only**.\n3. Select the **Apps** tab.\n4. Select the **Add app** button.\n5. Select the **Add button** for both **Customer Rewards** and **Franchise CRM**.\n6. Select **Done**."
+      "description": "## Configure the Authentication Policy\n\n>An Authentication Policy enforces how (with what authenticators) an end user can log in to an application. For the purpose of this lab, we'll assign our two apps the **Password only policy** so that you do not have to set up MFA for the test end-user accounts. In real-world use cases, a stronger Authentication Policy is recommended.\n\n1. Go to **Security** > **Authentication Policies**.\n2. Select **Password Only**.\n3. Select the **Applications** tab.\n4. Select the **Add app** button.\n5. Select the **Add button** for both **Customer Rewards** and **Franchise CRM**.\n6. Select **Done**."
     },
     {
       "title": "Configure an Access Policy",
