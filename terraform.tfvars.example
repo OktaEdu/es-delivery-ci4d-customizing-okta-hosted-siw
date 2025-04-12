@@ -1,0 +1,6 @@
+okta_org_name              = "your okta org name here"
+okta_base_url              = "okta.com"
+okta_oauth2_client_id      = "your client id here"
+okta_private_key_pem_path  = "./key.pem"
+codespace_name             = $CODESPACE_NAME
+

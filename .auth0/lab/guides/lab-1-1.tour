@@ -4,11 +4,28 @@
   "steps": [
     {
       "title": "Lab overview",
-      "description": "## Set Up Your Okta Org\n\n🎯 **Objective**:    Create an Okta Workforce Identity Cloud Developer Edition account and authenticate into your Okta organization's Admin Dashboard.\n\n⏱️ **Duration**:    5 minutes\n"
+      "description": "## Set Up Your Okta Org\n\n🎯 **Objective**:    Ensure your Okta Org is configured with the needed users, groups, policies, and apps to complete this lab.\n\n⏱️ **Duration**:    5 minutes\n"
     },
     {
-      "title": "Register for an Okta Workforce Identity Cloud Developer Edition account",
-      "description": "## Register for an Okta Workforce Identity Cloud Developer Edition account\n\nIf you haven't already, [register](https://developer.okta.com/signup/) for an Okta Workforce Identity Cloud Developer edition account.\n\nDuring this process you must:\n\n1. Verify your email.\n2. Set your password.\n3. [Enroll in Okta Verify](https://help.okta.com/eu/en-us/content/topics/end-user/ov-overview.htm?cshid=csh-user-ov-overview).\n\nOnce you are done, you will be logged in to your Okta Admin Dashboard as a [Super Admin](https://help.okta.com/en-us/content/topics/security/administrators-super-admin.htm)."
+      "title": "Log in to the Okta Admin Console",
+      "description": "## Log in to the Okta Admin Console\n\n1. Log in to your Okta Admin Console. \n\n### If you do not already have an Okta org, [register](https://developer.okta.com/signup/) for an Okta Workforce Identity Cloud Developer edition account.\n\nDuring this process you must:\n\n1. Verify your email.\n2. Set your password.\n3. [Enroll in Okta Verify](https://help.okta.com/eu/en-us/content/topics/end-user/ov-overview.htm?cshid=csh-user-ov-overview).\n\nOnce you are done, you will be logged in to your Okta Admin Dashboard as a [Super Admin](https://help.okta.com/en-us/content/topics/security/administrators-super-admin.htm)."
+    },
+    {
+      "title": "Register a Terraform service app",
+      "description": "## Register a Terraform service app\n\nWe will be configuring your Okta org using Terraform. To do this, you must register a Terraform service app in your Okta org. If you have already done this for another Okta lab, you can skip this step.\n\n1. Go to **Applications** > **Applications**\n2. Select the **Create an App Integration** button.\n3. Select **API Services**\n4. Name this app integration **Terraform Services**.\n5. Select the **Save** button.\n"
+    },
+    {
+      "title": "Assign admin roles to the Terraform Services app",
+      "description": "## Assign admin roles to the Terraform Services app\n\nTo use the Okta Terraform Provider, the service app will need admin privileges on your org.\n\n1. On the Terraform Services page, select the **Admin roles** tab.\n2. Select the **Edit assignments** button.\n3. Select the **Role** dropdown and choose **Super Administrator**.\n4. Select the **Save Changes** button.\n>Note: You may need to re-authenticate since this is a sensitive operation."
+    },
+    {
+      "title": "Create Terraform services access credentials",
+      "description": "## Create Terraform services access credentials\n\n1. From the Terraform Services page, select the **General** tab.\n2. Select **Edit** in the Client Credentials section.\n3. Next to Client authentication, select **Public key / Private key**.\n4. Scroll down to the PUBLIC KEYS section.\n5. Select the **Add key** button.\n6. Select **Generate a new key**.\n>Note: The private key appears in this dialog only once. Losing the private key requires generating a new key pair.\n7. Select the **PEM** tab.\n8. Copy the PEM private key.\n9. Select [this link](command:codetour.sendTextToTerminal?[\"touch key.pem; mv terraform.tfvars.example terraform.tfvars\"]) to create the file `key.pem`."
+    },
+    {
+      "file": "key.pem",
+      "description": "## Save your private key locally\n\n### Notice that `key.pem` has been opened for you.\n> For a production deployment, securely store the private key in a Terraform secrets management system or other key management system.\n\n1. Paste your PEM private key from the previous step into this file. It will save automatically.\n2. Back on your Okta org's Add a public key dialog box, select **Done**.\n3. Select **Save** and then **Save** again.",
+      "line": 1
     },
     {
       "title": "Lab checkpoint",

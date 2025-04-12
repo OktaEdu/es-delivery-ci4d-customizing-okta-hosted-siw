@@ -51,7 +51,7 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage 
+# Grunt intermediate storage
 (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
@@ -121,7 +121,7 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not 
+# Comment in the public line in if your project uses Gatsby and not
 Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
@@ -157,3 +157,20 @@ Next.js
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+*.pem
+*.key
+
+
+# Local .terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Environment variable overrides
+terraform.tfvars
+*.tfvars.json
