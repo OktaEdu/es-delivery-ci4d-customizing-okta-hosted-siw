@@ -14,7 +14,7 @@ provider "okta" {
     private_key          = file(var.okta_private_key_pem_path)
     client_id            = var.okta_oauth2_client_id
     scopes               = ["okta.apps.read", "okta.apps.manage", "okta.users.manage", "okta.groups.manage", "okta.policies.manage"]
-    token_url            = "https://${var.okta_org_name}.${var.okta_base_url}/oauth2/v1/token"
+    token_url            = "https://${var.okta_org_name}/oauth2/v1/token"
   }
 }
 
