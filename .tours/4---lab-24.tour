@@ -7,16 +7,12 @@
       "description": "## Lab 2.4: Configure the Redirect Apps to Use the Custom Domain\n\n🎯 **Objective:** Configure the redirect applications we set up previously to use the custom domain when redirecting users to the Okta-hosted Sign In Widget.\n\n🎬 **Scenario** When users authenticate into an Okta Ice app that uses the Okta-hosted Sign In Widget, they should be redirected to the widget through the custom URL rather than the Okta URL.\n\n⏱️ **Duration:** 10 minutes\n\n⚠️ **Prerequisite:** Lab 2-1"
     },
     {
-      "title": "Configure the Authorization Server Issuer URI ",
-      "description": "## Configure the Authorization Server Issuer URI \n\nWe're going to configure the default Okta Authorization Server to to use either our Okta org URL or our custom URL as an Issuer URI -- depending on what our client application expects.\n\n1. Ensure you're logged into the Okta Admin Dashboard as `oktatraining`\n2. In the Admin menu, navigate to `Security` > `API`\n3. Within the **Authorization Servers** table, local the `default` entry and click the blue pencil icon.\n4. On the following screen, click `Edit`\n5. In the `Issuer` section, select `Dynamic` from the drop down menu.\n6. Click `Save`\n7. **Logout** of Okta."
-    },
-    {
       "title": "Copy Redirect Applications",
       "description": "## Copy Redirect Applications\n\nClick [here](command:codetour.sendTextToTerminal?[\"mkdir redirect; cp ../01-introducing-okta/redirect/* redirect\"]) to copy the `redirect` directory to this workspace."
     },
     {
       "title": "Edit the Customer Rewards App",
-      "description": "## Edit the Customer Rewards App\n\n1. Notice that `rewards.html` has been opened here for you and that the line defining `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n\n3. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
+      "description": "## Edit the Customer Rewards App\n\n1. Notice that `rewards.html` has been opened here for you and that the line defining `baseOktaURL` is highlighted.\n\n2. Change the value of `baseOktaURL` so that it corresponds to your newly configured custom URL (e.g., https://oktaice########.coffee-ice.com)\n>Your Okta Org Authorization Server will dynamically accept OAuth 2.0 grant requests on both your Okta org URL and your configured custom URL.\n\n3. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
       "file": "redirect/rewards.html",
       "line": 17
     },
