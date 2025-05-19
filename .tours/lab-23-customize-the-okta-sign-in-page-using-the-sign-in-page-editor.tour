@@ -27,7 +27,7 @@
     {
       "file": "customized-sign-in-page-step4.html",
       "description": "## Update the Font Color of General Text in the SIW\n\nWe now know that the text color of the general text elements in the SIW is defined by the `#okta-sign-in *` selector so now we can add some embedded CSS to the Sign-In Page code. We'll make changes here first before checking the changes in the embedded Sign-In Page Code Editor.\n\nNotice that this lab step automatically points to a particular line in the HTML code. This is where you will be adding some embedded CSS to change the font color of the general text in the SIW to a blue hue that matches the Okta Ice logo. \n\nType in the following embedded CSS **or** use the `Insert Code` link to add it automatically:\n\n```html\n<style>\n    #okta-sign-in * {\n        color: #0E2D5B;\n    }\n</style>\n```\n\nFinally, [Click here to `Save`](command:workbench.action.files.save) your `HTML` file.",
-      "line": 24
+      "line": 16
     },
     {
       "file": "customized-sign-in-page-step4.html",
