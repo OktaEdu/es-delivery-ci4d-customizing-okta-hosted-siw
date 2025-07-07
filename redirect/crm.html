@@ -30,7 +30,7 @@
         url: baseOktaURL,
         clientId: appClientID,
         redirectUri: redirectURL,
-        issuer: baseOktaURL + '/oauth2/default',
+        issuer: baseOktaURL,
       });
 
       if (authClient.isLoginRedirect()) {
