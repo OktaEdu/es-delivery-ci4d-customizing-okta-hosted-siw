@@ -1,4 +1,4 @@
-# Lab: Deploy Redirect Authentication with the Okta-Hosted Sign In Widget
+# Lab: Sign in Your Users and Secure Sessions with Okta
 
 In this [Okta Training](https://www.okta.com/training/) hands-on lab, you will integrate a web application with Okta and deploy the redirect model of authentication. After this, you will customize the Okta Sign-In Widget (SIW) using the Branding UI and the Sign-In Page Code Editor.
 
@@ -9,7 +9,7 @@ In this [Okta Training](https://www.okta.com/training/) hands-on lab, you will i
 
     **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
 
-2. An Okta Workforce Identity Cloud Developer Edition account: You'll also need an Okta developer account. You should use a new account for our labs so that you have a fresh Okta Identity Engine (OIE) org. Register for one [here](https://developer.okta.com/signup/).
+2. An Okta Workforce Identity Integrator Free account: You'll also need an Okta developer account. You should use a new account for our labs so that you have a fresh Okta Identity Engine (OIE) org. Register for one [here](https://developer.okta.com/signup/).
 
 ## Accessing and Working with Okta Workforce Identity Cloud Labs
 
