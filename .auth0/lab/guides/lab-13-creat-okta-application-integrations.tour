@@ -141,7 +141,7 @@
     },
     {
       "title": "Lab checkpoint",
-      "description": "## ✅ Checkpoint\n\nYou now know how to set up an application integration in Okta.\n\n"
+      "description": "## ✅ Checkpoint\n\nYou now know how to set up an application integration in Okta and deploy authentication using the Redirect model.\n\n## 🎉 End of Lab\n\n**You may close and [stop this Codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace#stopping-a-codespace).**"
     }
   ]
 }
